@@ -112,270 +112,1452 @@
 >  # Show log deviating from base branch.
 >  $ git flow log help
 > ```
+
+## PODSTAWOWE ISTOTNE KOMENDY
+
 <table border="1">
-    <thead>
-        <tr>
-            <th rowspan="2"><code></code></th>
-            <th scope="col" colspan="13" align="center" valign="middle">PODSTAWOWE ISTOTNE KOMENDY</th>
-        </tr>
-        <tr>            
-            <th scope="col"><code>∅</code></th>
-            <th scope="col"><code>list</code></th>
-            <th scope="col"><code>start</code></th>
-            <th scope="col"><code>finish</code></th>
-            <th scope="col"><code>branch</code></th>
-            <th scope="col"><code>delete</code></th>
-            <th scope="col"><code>checkout</code></th>
-            <th scope="col"><code>diff</code></th>
-            <th scope="col"><code>rename</code></th>
-            <th scope="col"><code>pull</code></th>
-            <th scope="col"><code>rebase</code></th>
-            <th scope="col"><code>track</code></th>
-            <th scope="col"><code>publish</code></th>
-        </tr>
-        <tr>
-            <th colspan="14"></th>
-        </tr>
-    </thead>
-    <tbody>        
-        <tr> 
-        <th scope="row" rowspan="2" align="center" valign="middle">LISTA ODDZIAŁÓW:</th>           <td colspan="13" align="center" valign="middle"><code>git flow &lt;feature / bugfix / release / hotfix / support&gt; list</code></td>
-        </tr>
-        <tr>
-            <td align="center">☐</td>
-            <td align="center">✓</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-        </tr>
-        <tr>
-            <th colspan="14"></th>
-        </tr>
-        <tr> 
-        <th scope="row" rowspan="3" align="center" valign="middle">NOWY ODDZIAŁ:</th>           <td colspan="13" align="center" valign="middle"><code>git flow &lt;feature / bugfix&gt; start [opcje] &lt;nazwa&gt; [&lt;baza&gt;]</code><br><hr><code>git flow release; start [opcje] &lt;wersja&gt;</code><br><hr><code>git flow &lt;hotfix / support&gt; start [opcje] &lt;wersja&gt; [&lt;baza&gt;]</code></td>
-        </tr>
-        <tr>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">✓</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-        </tr>
-        <tr>
-            <th colspan="13" align="justify">Polecenie to tworzy nowy oddział (cechę(feature) lub korektę błędu(bugfix)) domyślnie z oddziału develop (rozwojowego) aczkolwiek można podać inną bazę wyjściową, a także inne opcje które omówię zbiorczo poniżej. Podobnie sprawa ma się do oddziałów (łatki (hotfix), i wsparcia wstecznego (support)) tyle że oddziały są nazywane aktualnym numerem wersji, i domyślnie są tworzone z oddziału produkcyjnego (master / trunk). Natomiast rozpoczynając nowy oddział dopracowania wydania (release) określamy tylko numer wersji.</th>
-        </tr>
-        <tr>
-            <th colspan="14"></th>
-        </tr>
-        <tr> 
-        <th scope="row" rowspan="3" align="center" valign="middle">ZAKOŃCZ ODDZIAŁ:</th>           <td colspan="13" align="center" valign="middle"><code>git flow &lt;feature / bugfix&gt; finish [opcje] &lt;nazwa | [prefix]&gt;</code><br><hr><code>git flow &lt;release / hotfix&gt; finish [opcje] &lt;wersja&gt;</code><br><hr><code>git flow release branch [opcje] &lt;wersja&gt;[nazwa]</code></td>
-        </tr>
-        <tr>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">✓</td>
-            <td align="center">✓</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-        </tr>
-        <tr>
-            <th colspan="13" align="justify">Polecenie to zakańcza prace nad oddziałem co w przypadku cechy(feature) i korekty(bugfix) skutkuje złączeniem go z develeop (linią rozwojową), domyślnie, natomiast w przypadku wydania(release) i łatki(hotfix) domyślnie powoduje złączenie z linią produkcyjną (master / trunk).<br> 
+<tr>
+<th rowspan="3" align="center" valign="middle"  scope="row">LISTA<br>ODDZIAŁÓW:</th>
+<th scope="col" scope="row">KOMENDY</th>
+<th scope="col"><code>feature</code></th>
+<th scope="col"><code>bugfix</code></th>
+<th scope="col"><code>release</code></th>
+<th scope="col"><code>hotfix</code></th>
+<th scope="col"><code>support</code></th>
+</tr>
+<tr>
+<th scope="row" align="right"><code>list</code></th>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+</tr>
+<tr>
+<td  colspan="6" align="justify"><code>$ git flow &lt;KOMENDA&gt; list [∅ / -h / -v / -h -v]</code></td>
+</tr>
+</table><hr>
+
+
+<table border="1">
+<tr>
+<th rowspan="3" align="center" valign="middle"  scope="row">NOWY<br>ODDZIAŁ:</th>
+<th scope="col" scope="row">KOMENDY</th>
+<th scope="col"><code>feature</code></th>
+<th scope="col"><code>bugfix</code></th>
+<th scope="col"><code>release</code></th>
+<th scope="col"><code>hotfix</code></th>
+<th scope="col"><code>support</code></th>
+</tr>
+<tr>
+<th scope="row" align="right"><code>start</code></th>
+<td align="center">✓ (1)</td>
+<td align="center">✓ (1)</td>
+<td align="center">✓ (2)</td>
+<td align="center">✓ (3)</td>
+<td align="center">✓ (3)</td>
+</tr>
+<tr>
+<td  colspan="6" align="justify"><code>$ git flow &lt;KOMENDA&gt; start [opcje] &lt;nazwa&gt; [&lt;baza&gt;]</code><br><hr><code>$ git flow release; start [opcje] &lt;wersja&gt;</code><br><hr><code>$ git flow &lt;KOMENDA&gt; start [opcje] &lt;wersja&gt; [&lt;baza&gt;]</code><hr>Polecenie to tworzy nowy oddział (cechę(feature) lub korektę błędu(bugfix)) domyślnie z oddziału develop (rozwojowego) aczkolwiek można podać inną bazę wyjściową, a także inne opcje które omówię zbiorczo poniżej. Podobnie sprawa ma się do oddziałów (łatki (hotfix), i wsparcia wstecznego (support)) tyle że oddziały są nazywane aktualnym numerem wersji, i domyślnie są tworzone z oddziału produkcyjnego (master / trunk). Natomiast rozpoczynając nowy oddział dopracowania wydania (release) określamy tylko numer wersji.</td>
+</tr>
+</table><hr>
+
+
+<table border="1">
+<tr>
+<th rowspan="4" align="center" valign="middle"  scope="row">ZAKOŃCZ<br>ODDZIAŁ:</th>
+<th scope="col" scope="row">KOMENDY</th>
+<th scope="col"><code>feature</code></th>
+<th scope="col"><code>bugfix</code></th>
+<th scope="col"><code>release</code></th>
+<th scope="col"><code>hotfix</code></th>
+<th scope="col"><code>support</code></th>
+</tr>
+<tr>
+<th scope="row" align="right"><code>finish</code></th>
+<td align="center">✓ (1)</td>
+<td align="center">✓ (1)</td>
+<td align="center">✓ (2)</td>
+<td align="center">✓ (2)</td>
+<td align="center"></td>
+</tr>
+<tr>
+<th scope="row" align="right"><code>branch</code></th>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">✓ (3)</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td  colspan="6" align="justify"><code>$ git flow &lt;KOMENDA&gt; finish [opcje] &lt;nazwa | [prefix]&gt;</code><br><hr><code>$ git flow &lt;KOMENDA&gt; finish [opcje] &lt;wersja&gt;</code><br><hr><code>$ git flow release branch [opcje] &lt;wersja&gt; [&lt;nazwa&gt;]</code><hr>Polecenie to zakańcza prace nad oddziałem co w przypadku cechy(feature) i korekty(bugfix) skutkuje złączeniem go z develeop (linią rozwojową), domyślnie, natomiast w przypadku wydania(release) i łatki(hotfix) domyślnie powoduje złączenie z linią produkcyjną (master / trunk).<br> 
 Istnieje też jakaś inna opcja zakańczania wydania(release) ale nie rozumiem póki co na czym polega [ Release a branch [&lt;name&gt;], if a name is not given it defaults to the develop branch, and use the given version &lt;version&gt;]
-<br>Warto jednak nadmienić że każda komenda zakończenia posiada gro różnorakich opcji dodatkowych, pozwalających dokładnie określić jak ta finalizacja pracy ma przebiegać.</th>
+<br>Warto jednak nadmienić że każda komenda zakończenia posiada gro różnorakich opcji dodatkowych, pozwalających dokładnie określić jak ta finalizacja pracy ma przebiegać.</td>
+</tr>
+</table><hr>
+
+
+<table border="1">
+<tr>
+<th rowspan="3" align="center" valign="middle"  scope="row">USUŃ<br>(TEN)<br>ODDZIAŁ:</th>
+<th scope="col" scope="row">KOMENDY</th>
+<th scope="col"><code>feature</code></th>
+<th scope="col"><code>bugfix</code></th>
+<th scope="col"><code>release</code></th>
+<th scope="col"><code>hotfix</code></th>
+<th scope="col"><code>support</code></th>
+</tr>
+<tr>
+<th scope="row" align="right"><code>delete</code></th>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td  colspan="6" align="justify"><code>$ git flow &lt;KOMENDA&gt; delete [opcje] &lt;nazwa&gt;</code></td>
+</tr>
+</table><hr>
+
+
+<table border="1">
+<tr>
+<th rowspan="3" align="center" valign="middle"  scope="row">PRZEŁĄCZ<br>NA INNY<br>ODDZIAŁ:</th>
+<th scope="col" scope="row">KOMENDY</th>
+<th scope="col"><code>feature</code></th>
+<th scope="col"><code>bugfix</code></th>
+<th scope="col"><code>release</code></th>
+<th scope="col"><code>hotfix</code></th>
+<th scope="col"><code>support</code></th>
+</tr>
+<tr>
+<th scope="row" align="right"><code>checkout</code></th>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td  colspan="6" align="justify"><code>$ git flow &lt;KOMENDA&gt; checkout &lt;nazwa | [prefix]&gt;</code></td>
+</tr>
+</table><hr>
+
+
+<table border="1">
+<tr>
+<th rowspan="3" align="center" valign="middle"  scope="row">POKAŻ<br>RÓŻNICE<br>ODDZIAŁU:</th>
+<th scope="col" scope="row">KOMENDY</th>
+<th scope="col"><code>feature</code></th>
+<th scope="col"><code>bugfix</code></th>
+<th scope="col"><code>release</code></th>
+<th scope="col"><code>hotfix</code></th>
+<th scope="col"><code>support</code></th>
+</tr>
+<tr>
+<th scope="row" align="right"><code>diff</code></th>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td  colspan="6" align="justify"><code>$ git flow &lt;KOMENDA&gt; diff &lt;nazwa | [prefix]&gt;</code><hr>Wyświetla wszystkie zmiany w danym oddziale, które nie są uwzględnione w develop (linii rozwojowej).</td>
+</tr>
+</table><hr>
+
+
+<table border="1">
+<tr>
+<th rowspan="3" align="center" valign="middle"  scope="row">ZMIEŃ<br>NAZWE<br>ODDZIAŁU:</th>
+<th scope="col" scope="row">KOMENDY</th>
+<th scope="col"><code>feature</code></th>
+<th scope="col"><code>bugfix</code></th>
+<th scope="col"><code>release</code></th>
+<th scope="col"><code>hotfix</code></th>
+<th scope="col"><code>support</code></th>
+</tr>
+<tr>
+<th scope="row" align="right"><code>rename</code></th>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center">✓</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td  colspan="6" align="justify"><code>$ git flow &lt;KOMENDA&gt; rename &lt;nowa_nazwa&gt; &lt;obecna_nazwa&gt;</code></td>
+</tr>
+</table><hr>
+
+
+<table border="1">
+<tr>
+<th rowspan="4" align="center" valign="middle"  scope="row">SCALANIE:</th>
+<th scope="col" scope="row">KOMENDY</th>
+<th scope="col"><code>feature</code></th>
+<th scope="col"><code>bugfix</code></th>
+<th scope="col"><code>release</code></th>
+<th scope="col"><code>hotfix</code></th>
+<th scope="col"><code>support</code></th>
+</tr>
+<tr>
+<th scope="row" align="right"><code>pull</code></th>
+<td align="center">✓ (1)</td>
+<td align="center">✓ (1)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<th scope="row" align="right"><code>rebase</code></th>
+<td align="center">✓ (2)</td>
+<td align="center">✓ (2)</td>
+<td align="center">✓ (2)</td>
+<td align="center">✓ (2)</td>
+<td align="center">✓ (2)</td>
+</tr>
+<tr>
+<td  colspan="6" align="justify"><code>$ git flow &lt;KOMENDA&gt; pull &lt;skrót oddziału zdalnego (remote)&gt; [&lt;nazwa&gt;]</code><br><hr><code>$ git flow &lt;KOMENDA&gt; rebase [opcje] &lt;nazwa | [prefix]&gt;</code><br><hr>Dwie opcje scalania: pull (fetch+merge) oraz rebase, …</td>
+</tr>
+</table><hr>
+
+
+<table border="1">
+<tr>
+<th rowspan="3" align="center" valign="middle"  scope="row">ŚLEDZENIE<br>ODDZIAŁU:</th>
+<th scope="col" scope="row">KOMENDY</th>
+<th scope="col"><code>feature</code></th>
+<th scope="col"><code>bugfix</code></th>
+<th scope="col"><code>release</code></th>
+<th scope="col"><code>hotfix</code></th>
+<th scope="col"><code>support</code></th>
+</tr>
+<tr>
+<th scope="row" align="right"><code>track/code></th>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td  colspan="6" align="justify"><code>$ git flow &lt;KOMENDA&gt; track &lt;nazwa&gt;</code><br><hr>(PL?) Start tracking feature / bugfix / release &lt;name&gt; that is shared on $ORIGIN</td>
+</tr>
+</table><hr>
+
+
+<table border="1">
+<tr>
+<th rowspan="3" align="center" valign="middle"  scope="row">PUBLIKOWANIE<br>ODDZIAŁU:</th>
+<th scope="col" scope="row">KOMENDY</th>
+<th scope="col"><code>feature</code></th>
+<th scope="col"><code>bugfix</code></th>
+<th scope="col"><code>release</code></th>
+<th scope="col"><code>hotfix</code></th>
+<th scope="col"><code>support</code></th>
+</tr>
+<tr>
+<th scope="row" align="right"><code>publish</code></th>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td  colspan="6" align="justify"><code>$ git flow &lt;KOMENDA&gt; publish &lt;nazwa&gt;</code><br><hr>(PL?) Publish feature / bugfix / release / hotfix branch &lt;name&gt; on $ORIGIN</td>
+</tr>
+</table><hr>
+<br>
+
+## DODATKOWE OPCJE DO PODSTAWOWYCH KOMEND
+
+<table border="1">
+ <thead><tr><th colspan="14" align="left"><h3><b>POMOC DO KOMEND, (ORAZ / LUB WYŚWIETLENIE WIĘCEJ INFORMACJI)</b></h3></th></tr></thead>
+    <tbody>
+    <tr>  
+   <th scope="row" scope="col">KOMENDY</th> 
+   <th scope="col"><code>∅</code></th>
+   <th scope="col"><code>list</code></th>
+   <th scope="col"><code>start</code></th>
+   <th scope="col"><code>finish</code></th>
+   <th scope="col"><code>branch</code></th>
+   <th scope="col"><code>delete</code></th>
+   <th scope="col"><code>checkout</code></th>
+   <th scope="col"><code>diff</code></th>
+   <th scope="col"><code>rename</code></th>
+   <th scope="col"><code>pull</code></th>
+   <th scope="col"><code>rebase</code></th>
+   <th scope="col"><code>track</code></th>
+   <th scope="col"><code>publish</code></th>
         </tr>
         <tr>
-            <th colspan="14"></th>
+   <th scope="row" align="right"><code>feature</code></th> 
+   <th>✓</th>
+   <th>✓ | ✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th></th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
         </tr>
-        <tr> 
-        <th scope="row" rowspan="2" align="center" valign="middle">USUŃ (TEN) ODDZIAŁ:</th>           <td colspan="13" align="center" valign="middle"><code>git flow &lt;feature / bugfix / release / hotfix&gt; delete [opcje] &lt;nazwa&gt;</code></td>
+        <tr>  
+   <th scope="row" align="right"><code>bugfix</code></th> 
+   <th>✓</th>
+   <th>✓ | ✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th></th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
         </tr>
-        <tr>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">✓</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
+        <tr>  
+   <th scope="row" align="right"><code>release</code></th> 
+   <th>✓</th>
+   <th>✓ | ✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th>✓</th>
+   <th>✓</th>
+   <th>✓</th>
         </tr>
-        <tr>
-            <th colspan="14"></th>
+        <tr>  
+   <th scope="row" align="right"><code>hotfix</code></th> 
+   <th>✓</th>
+   <th>✓ | ✓</th>
+   <th>✓</th>
+   <th>✓</th>
+   <th></th>
+   <th>✓</th>
+   <th></th>
+   <th></th>
+   <th>✓</th>
+   <th></th>
+   <th>✓</th>
+   <th></th>
+   <th>✓</th>
         </tr>
-        <tr> 
-        <th scope="row" rowspan="2" align="center" valign="middle">PRZEŁĄCZ NA INNY ODDZIAŁ:</th>           <td colspan="13" align="center" valign="middle"><code>git flow &lt;feature / bugfix&gt; checkout &lt;nazwa | [prefix]&gt;</code></td>
-        </tr>
-        <tr>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">✓</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-        </tr>
-        <tr>
-            <th colspan="14"></th>
-        </tr>
-        <tr> 
-        <th scope="row" rowspan="3" align="center" valign="middle">POKAŻ RÓŻNICE ODDZIAŁU:</th>           <td colspan="13" align="center" valign="middle"><code>git flow &lt;feature / bugfix&gt; diff &lt;nazwa | [prefix]&gt;</code></td>
-        </tr>
-        <tr>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">✓</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-        </tr>
-        <tr>
-            <th colspan="13" align="justify">Wyświetla wszystkie zmiany w danym oddziale, które nie są uwzględnione w develop (linii rozwojowej).</th>
-        </tr>
-        <tr>
-            <th colspan="14"></th>
-        </tr>
-        <tr> 
-        <th scope="row" rowspan="2" align="center" valign="middle">ZMIEŃ NAZWE ODDZIAŁU:</th>           <td colspan="13" align="center" valign="middle"><code>git flow &lt;feature / bugfix / hotfix&gt; rename &lt;nowa_nazwa&gt; &lt;obecna_nazwa&gt;</code></td>
-        </tr>
-        <tr>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">✓</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-        </tr>
-        <tr>
-            <th colspan="14"></th>
-        </tr>
-        <tr> 
-        <th scope="row" rowspan="3" align="center" valign="middle">SCALANIE:</th>           <td colspan="13" align="center" valign="middle"><code>git flow &lt;feature / bugfix&gt; pull &lt;skrót oddziału zdalnego (remote)&gt; [&lt;nazwa&gt;]</code><br><hr><code>git flow &lt;feature / bugfix / release / hotfix / support&gt; rebase [opcje] &lt;nazwa | [prefix]&gt;</code></td>
-        </tr>
-        <tr>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">✓</td>
-            <td align="center">✓</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-        </tr>
-        <tr>
-            <th colspan="13" align="justify">Dwie opcje scalania: pull (fetch+merge) oraz rebase, … </th>
-        </tr>
-        <tr>
-            <th colspan="14"></th>
-        </tr>
-        <tr> 
-        <th scope="row" rowspan="3" align="center" valign="middle">ŚLEDZENIE ODDZIAŁU:</th>           <td colspan="13" align="center" valign="middle"><code>git flow &lt;feature / bugfix / release&gt; track &lt;nazwa&gt;</code></td>
-        </tr>
-        <tr>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">✓</td>
-            <td align="center">☐</td>
-        </tr>
-        <tr>
-            <th colspan="13" align="justify">(PL?) Start tracking feature / bugfix / release <name> that is shared on $ORIGIN</th>
-        </tr>
-        <tr>
-            <th colspan="14"></th>
-        </tr>
-        <tr> 
-        <th scope="row" rowspan="3" align="center" valign="middle">PUBLIKOWANIE ODDZIAŁU:</th>           <td colspan="13" align="center" valign="middle"><code>git flow &lt;feature / bugfix / release / hotfix&gt; publish &lt;nazwa&gt;</code></td>
-        </tr>
-        <tr>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">☐</td>
-            <td align="center">✓</td>
-        </tr>
-        <tr>
-            <th colspan="13" align="justify">(PL?) Publish feature / bugfix / release / hotfix branch <name> on $ORIGIN</th>
-        </tr>
-        <tr>
-            <th colspan="14"><br><br></th>
+        <tr>  
+   <th scope="row" align="right"><code>support</code></th> 
+   <th>✓</th>
+   <th>✓ | ✓</th>
+   <th>✓</th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th></th>
+   <th>✓</th>
+   <th></th>
+   <th></th>
         </tr>
     </tbody>
-    </table>
+    <tfoot>
+    <tr>   
+   <th scope="col" colspan="14" align="justify" valign="middle"> <code> $ git flow [KOMENDA V&H] [-h / help]</code> | <code> $ git flow list [-v / verbose]</code> | <code> $ git flow [KOMENDA V&H] [-h / help] [-v / verbose]</code><br><hr><i><b>np.: <code>$ git flow feature finish -h</code></b>, Można też użyć dodakowo opcji <code>[-v / verbose]</code> aby wyświetlić więcej informacji.</i></th>
+        </tr>    
+    </tfoot>
+</table><hr>
 
+<table border="1">
+        <thead>
+            <tr>
+                <th colspan="13" align="left">
+                    <h3>
+                        <b>UKAZANIE „CICHYCH” OPERACJI GITA
 
+</b>
+                    </h3>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" scope="col">KOMENDY</th>                
+                <th scope="col">
+                    <code>list</code>
+                </th>
+                <th scope="col">
+                    <code>start</code>
+                </th>
+                <th scope="col">
+                    <code>finish</code>
+                </th>
+                <th scope="col">
+                    <code>branch</code>
+                </th>
+                <th scope="col">
+                    <code>delete</code>
+                </th>
+                <th scope="col">
+                    <code>checkout</code>
+                </th>
+                <th scope="col">
+                    <code>diff</code>
+                </th>
+                <th scope="col">
+                    <code>rename</code>
+                </th>
+                <th scope="col">
+                    <code>pull</code>
+                </th>
+                <th scope="col">
+                    <code>rebase</code>
+                </th>
+                <th scope="col">
+                    <code>track</code>
+                </th>
+                <th scope="col">
+                    <code>publish</code>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>feature</code>
+                </th>
+                <th></th>
+                <th>✓</th>
+                <th>✓</th>
+                <th></th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>bugfix</code>
+                </th>
+                <th></th>
+                <th>✓</th>
+                <th>✓</th>
+                <th></th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>release</code>
+                </th>
+                <th>  </th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>✓</th>
+                <th>✓</th>
+                <th>✓</th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>hotfix</code>
+                </th>
+                <th>  </th>
+                <th>✓</th>
+                <th>✓</th>
+                <th></th>
+                <th>✓</th>
+                <th></th>
+                <th></th>
+                <th>✓</th>
+                <th></th>
+                <th>✓</th>
+                <th></th>
+                <th>✓</th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>support</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="col" colspan="13" align="justify" valign="middle">
+                    <code> $ git flow [KOMENDA V&H] [inne opcje] --showcommands</code>
+                    <br><hr>
+                    Pokazuje komendy Gita które wykonują się w tle podczas zlecania komend git flow</i>
+                </th>
+            </tr>
+        </tfoot>
+    </table><hr>
 
+<table border="1">
+        <thead>
+            <tr>
+                <th colspan="13" align="left">
+                    <h3>
+                        <b>POBIERANIE (fetch)</b>
+                    </h3>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" scope="col">KOMENDY</th>                
+                <th scope="col">
+                    <code>list</code>
+                </th>
+                <th scope="col">
+                    <code>start</code>
+                </th>
+                <th scope="col">
+                    <code>finish</code>
+                </th>
+                <th scope="col">
+                    <code>branch</code>
+                </th>
+                <th scope="col">
+                    <code>delete</code>
+                </th>
+                <th scope="col">
+                    <code>checkout</code>
+                </th>
+                <th scope="col">
+                    <code>diff</code>
+                </th>
+                <th scope="col">
+                    <code>rename</code>
+                </th>
+                <th scope="col">
+                    <code>pull</code>
+                </th>
+                <th scope="col">
+                    <code>rebase</code>
+                </th>
+                <th scope="col">
+                    <code>track</code>
+                </th>
+                <th scope="col">
+                    <code>publish</code>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>feature</code>
+                </th>
+                <th></th>
+                <th>✓ (1a)</th>
+                <th>✓ (2a)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>bugfix</code>
+                </th>
+                <th></th>
+                <th>✓ (1a)</th>
+                <th>✓ (2a)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>release</code>
+                </th>
+                <th>  </th>
+                <th>✓ (1b)</th>
+                <th>✓ (2b)</th>
+                <th>✓ (2c)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>hotfix</code>
+                </th>
+                <th>  </th>
+                <th>✓ (1c)</th>
+                <th>✓ (2b)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>support</code>
+                </th>
+                <th></th>
+                <th>✓ (1c)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="col" colspan="13" align="justify" valign="middle">
+                    (1a) <code> $ git flow [KOMENDA V] start [inne opcje] [-F / fetch] &lt;nazwa&gt; [&lt;baza&gt;]</code>
+                    <br>
+                    (1b) <code> $ git flow release start [inne opcje] [-F / fetch] &lt;wersja&gt;</code><br>
+                    (1c) <code> $ git flow [KOMENDA V] start [inne opcje] [-F / fetch] &lt;wersja&gt; [&lt;baza&gt;]</code>
+                    <br>Pobiera aktualną wersję z „origin” przed wykonaniem operacji lokalnych<br><hr>
+                    (2a) <code> $ git flow [KOMENDA V] finish [inne opcje] [-F / fetch] &lt;nazwa | [prefix]&gt;</code><br>
+                    (2b) <code> $ git flow [KOMENDA V] finish [inne opcje] [-F / fetch] &lt;wersja&gt;</code><br>
+                    (2c) <code> $ git flow release branch [inne opcje] [-F / fetch] &lt;wersja&gt; [&lt;nazwa&gt;]</code>
+                    <br>Pobiera aktualną wersję z „origin” przed wykonaniem zakończenia<br>
+                </th>
+            </tr>
+        </tfoot>
+    </table><hr> 
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="13" align="left">
+                    <h3>
+                        <b>ZACHOWYWANIE ODDZIAŁÓW PODCZAS ZAKAŃCZANIA NAD NIMI PRACY</b>
+                    </h3>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" scope="col">KOMENDY</th>                
+                <th scope="col">
+                    <code>list</code>
+                </th>
+                <th scope="col">
+                    <code>start</code>
+                </th>
+                <th scope="col">
+                    <code>finish</code>
+                </th>
+                <th scope="col">
+                    <code>branch</code>
+                </th>
+                <th scope="col">
+                    <code>delete</code>
+                </th>
+                <th scope="col">
+                    <code>checkout</code>
+                </th>
+                <th scope="col">
+                    <code>diff</code>
+                </th>
+                <th scope="col">
+                    <code>rename</code>
+                </th>
+                <th scope="col">
+                    <code>pull</code>
+                </th>
+                <th scope="col">
+                    <code>rebase</code>
+                </th>
+                <th scope="col">
+                    <code>track</code>
+                </th>
+                <th scope="col">
+                    <code>publish</code>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>feature</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th>✓ (1)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>bugfix</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th>✓ (1)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>release</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th>✓ (2)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>hotfix</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th>✓ (2)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>support</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="col" colspan="13" align="justify" valign="middle">
+                    (1) <code> $ git flow [KOMENDA V] finish [inne opcje] [TE OPCJE] &lt;nazwa | prefix&gt;</code><br>
+                    (2) <code> $ git flow [KOMENDA V] finish [inne opcje] [TE OPCJE] &lt;wersja&gt;</code>
+                    <br>
+                    <b>[TE OPCJE] : </b><br>
+                    <code>[-k / keep]</code>  Zatrzymaj oddział po zakończeniu nad nim pracy.<br>
+                    <code>keeplocal</code>  Zatrzymaj oddział lokalny.<br>
+                    <code>keepremote</code>  Zatrzymaj oddział zdalny.<br>
+                </th>
+            </tr>
+        </tfoot>
+    </table><hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="13" align="left">
+                    <h3>
+                        <b>OZNACZANIE</b>
+                    </h3>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" scope="col">KOMENDY</th>                
+                <th scope="col">
+                    <code>list</code>
+                </th>
+                <th scope="col">
+                    <code>start</code>
+                </th>
+                <th scope="col">
+                    <code>finish</code>
+                </th>
+                <th scope="col">
+                    <code>branch</code>
+                </th>
+                <th scope="col">
+                    <code>delete</code>
+                </th>
+                <th scope="col">
+                    <code>checkout</code>
+                </th>
+                <th scope="col">
+                    <code>diff</code>
+                </th>
+                <th scope="col">
+                    <code>rename</code>
+                </th>
+                <th scope="col">
+                    <code>pull</code>
+                </th>
+                <th scope="col">
+                    <code>rebase</code>
+                </th>
+                <th scope="col">
+                    <code>track</code>
+                </th>
+                <th scope="col">
+                    <code>publish</code>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>feature</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>bugfix</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>release</code>
+                </th>
+                <th>  </th>
+                <th></th>
+                <th>✓ (1)<br><hr>✓ (3)</th>
+                <th>✓ (2)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>hotfix</code>
+                </th>
+                <th>  </th>
+                <th></th>
+                <th>✓ (1)<br><hr>✓ (3)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>support</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="col" colspan="13" align="justify" valign="middle">
+                    (1) <code> $ git flow [KOMENDA V] finish [inne opcje] [TE OPCJE] &lt;wersja&gt;</code>
+                    <br>
+                    (2) <code> $ git flow release branch [inne opcje] [TE OPCJE]  &lt;wersja&gt; | &lt;nazwa&gt;</code><br>
+                    <b>[TE OPCJE] : </b><br>
+                    <code>[-m / --message]</code> use the given tag message<br>
+                    <code>[-f / --messagefile]</code> use the contents of the given file as a tag message<br>
+                    <code>[-n / notag]</code> don't tag this release<br>
+                    <code>[-s / sign]</code> sign the release tag cryptographically<br>
+                    <code>[-u / --signingkey]</code> use the given GPG-key for the digital signature (implies -s)
+                    <br><hr>
+                    (3) <code> $ git flow [KOMENDA V] finish [inne opcje] [-T / --tagname] &lt;wersja&gt;</code><br>
+                    use given tag name<br>
+                </th>
+            </tr>
+        </tfoot>
+    </table><hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="13" align="left">
+                    <h3>
+                        <b>USUWANIE</b>
+                    </h3>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" scope="col">KOMENDY</th>                
+                <th scope="col">
+                    <code>list</code>
+                </th>
+                <th scope="col">
+                    <code>start</code>
+                </th>
+                <th scope="col">
+                    <code>finish</code>
+                </th>
+                <th scope="col">
+                    <code>branch</code>
+                </th>
+                <th scope="col">
+                    <code>delete</code>
+                </th>
+                <th scope="col">
+                    <code>checkout</code>
+                </th>
+                <th scope="col">
+                    <code>diff</code>
+                </th>
+                <th scope="col">
+                    <code>rename</code>
+                </th>
+                <th scope="col">
+                    <code>pull</code>
+                </th>
+                <th scope="col">
+                    <code>rebase</code>
+                </th>
+                <th scope="col">
+                    <code>track</code>
+                </th>
+                <th scope="col">
+                    <code>publish</code>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>feature</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th>✓ (1)</th>
+                <th></th>
+                <th>✓ (2)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>bugfix</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th>✓ (1)</th>
+                <th></th>
+                <th>✓ (2)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>release</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>✓ (2)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>hotfix</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>✓ (2)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>support</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="col" colspan="13" align="justify" valign="middle">
+                    (1) <code> $ git flow [KOMENDA V] finish [inne opcje] [-D / force_delete] &lt;nazwa | prefix&gt;</code>
+                    <br>
+                    force delete feature / bugfix branch after finish<br><hr>
+                    (2) <code> $ git flow [KOMENDA V] delete [inne opcje] [TE OPCJE]  &lt;nazwa&gt;</code><br>
+                    <b>[TE OPCJE] : </b><br>
+                    <code>[-r / remote]</code> delete remote branch<br>
+                    <code>[-f / force]</code> force deletion<br>
+                </th>
+            </tr>
+        </tfoot>
+    </table><hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="13" align="left">
+                    <h3>
+                        <b>WYPYCHANIE</b>
+                    </h3>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" scope="col">KOMENDY</th>                
+                <th scope="col">
+                    <code>list</code>
+                </th>
+                <th scope="col">
+                    <code>start</code>
+                </th>
+                <th scope="col">
+                    <code>finish</code>
+                </th>
+                <th scope="col">
+                    <code>branch</code>
+                </th>
+                <th scope="col">
+                    <code>delete</code>
+                </th>
+                <th scope="col">
+                    <code>checkout</code>
+                </th>
+                <th scope="col">
+                    <code>diff</code>
+                </th>
+                <th scope="col">
+                    <code>rename</code>
+                </th>
+                <th scope="col">
+                    <code>pull</code>
+                </th>
+                <th scope="col">
+                    <code>rebase</code>
+                </th>
+                <th scope="col">
+                    <code>track</code>
+                </th>
+                <th scope="col">
+                    <code>publish</code>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>feature</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>bugfix</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>release</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th>✓ (1/3/4)</th>
+                <th>✓ (2)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>hotfix</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th>✓ (1)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>support</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="col" colspan="13" align="justify" valign="middle">
+                    (1) <code> $ git flow [KOMENDA V] finish [inne opcje] [-p / push] &lt;wersja&gt;</code><br>
+                    (2) <code> $ git flow release branch [inne opcje] [-p / push] &lt;wersja&gt; [&lt;nazwaa&gt;]</code>
+                    <br>
+                    push the production and develop branch to origin after performing the finish.<br><hr>
+                    (3) <code> $ git flow release finish [inne opcje] pushdevelop &lt;wersja&gt;</code>
+                    <br>
+                    push the develop branch to origin after performing the finish.<br><hr>
+                    (4) <code> $ git flow release finish [inne opcje] pushproduction &lt;wersja&gt;</code>
+                    <br>
+                    push the production branch to origin after performing the finish.<br>
+                </th>
+            </tr>
+        </tfoot>
+    </table><hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="13" align="left">
+                    <h3>
+                        <b>OPCJE ODNOŚNIE SCALANIA</b>
+                    </h3>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" scope="col">KOMENDY</th>                
+                <th scope="col">
+                    <code>list</code>
+                </th>
+                <th scope="col">
+                    <code>start</code>
+                </th>
+                <th scope="col">
+                    <code>finish</code>
+                </th>
+                <th scope="col">
+                    <code>branch</code>
+                </th>
+                <th scope="col">
+                    <code>delete</code>
+                </th>
+                <th scope="col">
+                    <code>checkout</code>
+                </th>
+                <th scope="col">
+                    <code>diff</code>
+                </th>
+                <th scope="col">
+                    <code>rename</code>
+                </th>
+                <th scope="col">
+                    <code>pull</code>
+                </th>
+                <th scope="col">
+                    <code>rebase</code>
+                </th>
+                <th scope="col">
+                    <code>track</code>
+                </th>
+                <th scope="col">
+                    <code>publish</code>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>feature</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th>✓ (3/5)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>✓ (4)</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>bugfix</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th>✓ (3/5)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>✓ (4)</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>release</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th>✓ (1/2/5)</th>
+                <th>✓ (5)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>✓ (4)</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>hotfix</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th>✓ (1)</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>✓ (4)</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row" align="right">
+                    <code>support</code>
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>✓ (4)</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="col" colspan="13" align="justify" valign="middle">
+                    (1a) <code> $ git flow release finish [inne opcje] [-b / nobackmerge] &lt;wersja&gt;</code><br>
+                    (1b) <code> $ git flow hotfix finish [inne opcje] [-b / nobackmerge] &lt;wersja&gt; [&lt;nazwa&gt;]</code><br>
+                    don't back-merge master, or tag if applicable, in develop<br><hr>
+                    (2) <code> $ git flow release finish [inne opcje] --ff-master &lt;wersja&gt;</code><br>
+                    Fast forward master branch if possible<br><hr>
+                    (3a) <code> $ git flow [KOMENDA V] finish [inne opcje] --no-ff &lt;nazwa | prefix&gt;</code><br>
+                    never fast-forward during the merge<br><hr>
+                    (3a) <code> $ git flow [KOMENDA V] finish [inne opcje] [-r / rebase] &lt;nazwa | prefix&gt;</code><br>
+                    rebase instead of merge<br><hr>
+                    (3b) <code> $ git flow [KOMENDA V] finish [inne opcje] [-p / preserve-merges] &lt;nazwa | prefix&gt;</code><br>
+                    preserve merges while rebasing<br><hr>
+                    (4a) <code> $ git flow [KOMENDA V] rebase [inne opcje] [-p / preserve-merges] &lt;nazwa | prefix&gt;</code><br>
+                    preserve merges<br><hr>
+                    (4b) <code> $ git flow [KOMENDA V] rebase [inne opcje] [-i / interactive] &lt;nazwa | prefix&gt;</code><br>
+                    do an interactive rebase<br><hr>
+                    (5a) <code> $ git flow [KOMENDA V] finish [inne opcje] [-S / squash] &lt;nazwa | prefix&gt;</code><br>
+                    (5b) <code> $ git flow release finish [inne opcje] [-S / squash] &lt;wersja&gt;</code><br>
+                    (5b) <code> $ git flow release branch [inne opcje] [-S / squash] &lt;wersja&gt; [&lt;nazwa&gt;]</code><br>
+                    squash feature / bugfix / release during merge
+                    <br>
+                </th>
+            </tr>
+        </tfoot>
+    </table><hr>
 
+# **[POWRÓT DO WPRWADZENIA][skorowidz:0]** 
 
-
+[skorowidz:0]: ./Home.md 
 
 [obrazek:1]: ./Images/git_environment.png  "Środowisko Gita"
 [obrazek:2]: ./Images/git_working_space.png  "Moja organizacja pracy z Gitem (1)"

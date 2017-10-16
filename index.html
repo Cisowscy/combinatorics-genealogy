@@ -1,206 +1,320 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Kombinatoryka Genealogiczno-Genetyczna</title>
-<link rel="stylesheet" href="lib/ng-table-2.0.2/bundles/ng-table.min.css">
-<link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="lib/font-typicons-2.0.7/css/typicons.min.css">
-
-
-
-<link rel="stylesheet" type="text/css" href="lib/theme.css">
-
+    <title>STOSUNKI GENEALOGICZNE</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&amp;subset=latin-ext" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
 </head>
+
 <body>
     <header>
-        <h1>Kombinatoryka Genealogiczno-Genetyczna</h1>
+        <div class="dach">
+            <a href="https://cisowscy.github.io/CombinatoricsGenealogy/">
+            Kombinatoryka—Genealogiczno—Genetyczna — Metoda Numeracji Eytzinger`a — Cisowski`ego (do Identyfikacji Stosunków Genealogiczno-Genetycznych)</a> 
+        </div>
+        
+            <noscript>
+                <br>
+                <br>
+                <br>Przepraszam, Twoja przeglądarka nie wspiera JavaScript! i HTML5 (w tym obiektow CANVAS) - takoz strona nie
+                bedzie poprawnie dzialac: twoje opcje (do wyboru)
+                <br>
+                <ul>
+                    <li>wylacz blokowanie javascript</li>
+                    <li>
+                        <a href="https://www.google.pl/chrome">Pobierz i zainstaluj Google Chrome</a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/firefox/new/">Pobierz i zainstaluj Mozilla Firefox</a>
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <br>
+            </noscript>
     </header>
-    <article>
+    <main>
         <section>
-            <h2 onclick="sekcja_parametry_click()">
-                <span>Ustawienia</span>
-                <span>Parametrów</span>
-                <span>Generowanej</span>
-                <span>Listy</span>
-                <span>Osób</span>
-            </h2>
-            <div id="sekcja_parametry">
-            <div class="paneleUstawien">
-                <fieldset>
-                    <legend>Zakres Złożoności</legend>
-                    <div class="panelUstawien_typ1" >
-                        <div class="range-slider"><br>
-                            <span>0° - probant, 1° - np. rodzic</span><br><br><br><br>                           
-                            <span class="rangeValues"></span>
-                            <input class="inputRange" value="0" min="0" max="10" step="1" type="range">
-                            <input class="inputRange" value="1" min="0" max="10" step="1" type="range">                         
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Płeć Probant</legend>
-                    <div class="panelUstawien_typ1">
-                        <select id="PlecProbanta">
-                            <optgroup label="nie zgrupowana">
-                                <option value="M0">Mężczyzna</option>
-                                <option value="W0">Kobieta</option>
-                                <option value="MW0">Nieustalona</option>
-                            </optgroup>
-                            <optgroup label="zgrupowana">
-                                <option value="M1">Mężczyzna</option>
-                                <option value="W1">Kobieta</option>
-                                <option value="MW1" selected>Nieustalona</option>
-                            </optgroup>
-                            <optgroup label="tylko nazwa">
-                                <option value="O1">grupy</option>
-                            </optgroup>
-                        </select>
-                    </div>                    
-                </fieldset>
-                <fieldset>
-                    <legend>Fragment Rodziny</legend>
-                    <div class="panelUstawien_typ1">
-                        <table class="tabelkaTyp1">
-                            <tr class="firstEdge">
-                                <td class="firstEdge"><label><input type="checkbox" name="fragmentR" class="fragmentR" value="p" checked disabled="disabled"> Powinowaci </label></td>
-                                <td class="lastEdge"><label> Zstępni <input type="checkbox" name="fragmentR" class="fragmentR" value="z" checked disabled="disabled"></label></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" class="firstEdge lastEdge"></td>
-                            </tr>
-                            <tr class="firstEdge">
-                                <th class="firstEdge">Aganci</th>
-                                <th class="lastEdge">Kaganci</th>
-                            </tr>
-                            <tr>
-                                <td class="firstEdge"><label><input type="checkbox" name="fragmentR" class="fragmentR" value="wa" checked disabled="disabled"> Wstępni </label></td>
-                                <td class="lastEdge"><label> Wstępni <input type="checkbox" name="fragmentR" class="fragmentR" value="wk" checked disabled="disabled"></label></td>
-                            </tr>
-                            <tr class="lastEdge">
-                                <td class="firstEdge"><label><input type="checkbox" name="fragmentR" class="fragmentR" value="ba" checked disabled="disabled"> l. Bocznej </label></td>
-                                <td class="lastEdge"><label> l. Bocznej <input type="checkbox" name="fragmentR" class="fragmentR" value="bk" checked disabled="disabled"></label></td>
-                            </tr>
-                        </table>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Język</legend>
+            <fieldset id="sekcja_fieldset0" class="sekcja_fieldset">
+                <legend class="LEGENDA_FILEDEST" id="LEGENDA_FILEDEST_wyjasnienie" align="center" onclick="sekcja_fieldset0_F()">wyjaśnienie</legend>
+                <div id="sekcja_fieldset_div0" class="sekcja_fieldset_div">
                     <div>
-                        <label>
-                            <input type="radio" class="wybJezyk" name="jenzykKol" value="LA" disabled="disabled"> Łacina
-                        </label><br>
-                        <label>
-                            <input type="radio" class="wybJezyk" name="jenzykKol" value="PL" checked> Polski
-                        </label><br>
-                        <label>
-                            <input type="radio" class="wybJezyk" name="jenzykKol" value="DE" disabled="disabled"> Niemiecki
-                        </label><br>
-                        <label>
-                            <input type="radio" class="wybJezyk" name="jenzykKol" value="EN" disabled="disabled"> Rosyjski
-                        </label><br>
-                        <label>
-                            <input type="radio" class="wybJezyk" name="jenzykKol" value="EN" disabled="disabled"> Węgierski
-                        </label><br>
-                        <label>
-                            <input type="radio" class="wybJezyk" name="jenzykKol" value="EN" disabled="disabled"> Angielski
-                        </label><br>
+                        <br> TU bedzie INFO odnoscnie cyfr
+                        <br> i opis celu powstania tej modifikacji
                     </div>
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Wyświetl Następujące Informacje</legend>
-                    <div class="panelUstawien_typ2">                        
-                        <div>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="poziom_zlozonosci" checked disabled="disabled"> poziom złożonosci &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="grupa_KOD_hex" checked disabled="disabled"> KOD (hex) grupy &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="grupa_opis" checked disabled="disabled"> opis grupy &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="stosunek_KOD_txt" checked disabled="disabled"> KOD (txt) stosunku &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="stosunek_KOD_hex" checked disabled="disabled"> KOD (hex) stosunku &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="stosunek_opis" checked disabled="disabled"> opis stosunku &nbsp;</label>
-                        </div>
-                        <div>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="stosunek_nazwa_1" disabled="disabled"> nazwa stosunku w.1 &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="stosunek_nazwa_2" disabled="disabled"> nazwa stosunku w.2 &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="stosunek_nazwa_3" disabled="disabled"> nazwa stosunku w.3 &nbsp;</label><br>                       
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="osoba_pokolenie" disabled="disabled"> (pokolenie np.-II, I, 0) &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="osoba_typ" disabled="disabled"> (krewni/powinowaci/obcy) &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="osoba_podtyp_1" disabled="disabled"> (wstępni/zstępni/boczni) &nbsp;</label><br>  
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="osoba_podtyp_2" disabled="disabled"> (aganci/kaganci) &nbsp;</label>
-                        </div>
-                        <div>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="stopien_K" disabled="disabled"> stopień pokrewienstwa &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="stopien_KiP" disabled="disabled"> stopień łączony K+P &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="stopien_P" disabled="disabled"> stopień powinowactwa &nbsp;<br>&nbsp; &nbsp; &nbsp; (wzgl. krewnego o st. n) &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="dystans_K" disabled="disabled"> dystans do probanta &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="dystans_P" disabled="disabled"> dystans do krewnego &nbsp;<br>&nbsp; &nbsp; &nbsp; (wzgl. probanta o dys. n) &nbsp;</label>       
-                        </div>
-                        <div>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="DNA_mito" disabled="disabled"> wspólność mtDNA &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="DNA_Ychro" disabled="disabled"> wspólność Y-DNA &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="DNA_Xchro" disabled="disabled"> wspólność X-DNA &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="DNA_autos" disabled="disabled"> % wspólności atDNA &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="DNA_linia_mamy" disabled="disabled"> rodzina mtDNA &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="DNA_linia_taty" disabled="disabled"> rodzina Y-DNA &nbsp;</label><br>
-                            <label><input type="checkbox" name="coWyswietlic" class="coWyswietlic" value="SosaStradonitz_dAboville" disabled="disabled"> pozycja osoby &nbsp;</label>
-                        </div>  
-                    </div>
-                </fieldset>
-            </div>
-            <fieldset id="Klawisz_generuj_koligace" onclick="Klawisz_generuj_koligace()">
-                <span>Generuj Listę Koligacji</span>
-            </fieldset>
-           </div>
-        </section>
-        <section id="dane_filtry">
-            <h2 onclick="sekcja_filtry_click()">
-                <span>Filtrowanie</span>
-                <span>Listy</span>
-                <span>Osób</span>
-            </h2>
-            <div id="sekcja_filtry">
-            <div class="paneleFiltrow">
-                <fieldset>
-                    <legend>Znajdź</legend>
-                    <p>gtfgtr</p>
-                    <p>gtfgtr</p>
-                    <input id="filtr_Znajdz" type="button" value="✔" onclick="WyswietlDane()">
-                </fieldset>
-                <fieldset>
-                    <legend>Pokaż ( 1 ) / Ukryj ( 0 )</legend>
-                    <p>gtfgtr</p>
-                    <p>gtfgtr</p>
-                </fieldset>
-            </div></div>
-        </section>
-        <section id="dane_tabele">
-            <h2  onclick="sekcja_kombinacje_click()">
-                <span>Tabela</span>
-                <span>Stosunków</span>
-                <span>Genealogiczno</span>
-                <span>-</span>
-                <span>Genetycznych</span>
-            </h2>
-            <div id="sekcja_kombinacje">
-               
-            </div>
-             
-        </section>
-        <section id="dane_testowe">
-            <fieldset id="Klawisz_chowaj_info" onclick="chowaj_dane_testowe()">
-                <legend>Informacje Weryfikujące Działanie Strony</legend>
-                <p id="demo"></p>
+                </div>
             </fieldset>
         </section>
-    </article>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.2/d3.min.js"></script> -->
-    <script src="lib/angularJS-1.6.6/angular.min.js" type="text/javascript"></script>
-    <script src="lib/ng-table-2.0.2/bundles/ng-table.min.js" type="text/javascript"></script>       
+        <section>
+            <fieldset id="sekcja_fieldset0b" class="sekcja_fieldset">
+                <legend align="center" class="LEGENDA_FILEDEST" id="LEGENDA_FILEDEST_historia" onclick="sekcja_fieldset0b_F()">historia</legend>
+                <div id="sekcja_fieldset_div0b" class="sekcja_fieldset_div">
+                    <div>
+                        <br> TU bedzie krotka historia
+                        <br>
+                    </div>
+                </div>
+            </fieldset>
+        </section>
 
-    <script src="lib/main.js" type="text/javascript"></script>
-    <script src="lib/kombinatoryka.js" type="text/javascript"></script>
+
+        <section>
+            <section>
+                <fieldset class="sekcja_fieldset">
+                        <legend class="LEGENDA_FILEDEST" id="LEGENDA_FILEDEST_podajKOD" align="center" onclick="sekcja_fieldset1_F()">Podaj Kod Stosunku</legend>
+                   <!-- <legend id="sekcja_fieldset_legend1" class="sekcja_fieldset_legend">Podaj Kod Stosunku</legend>-->
+                    <div id="sekcja_fieldset_div1" class="sekcja_fieldset_div">
+                        <div class="flex_lam">
+                            <fieldset class="inputy_gr inputy_gr1">
+                                <legend>Stosunek Probanta
+                                    <br>do Krewnego</legend>
+                                <div class="grupa">
+                                    <div class="grupaPLEC">
+                                        <div class="opisP">♂</div>
+                                        <div class="obiektP">
+                                            <input type="radio" class="PROBANTsex" name="plec_osoby" value="0" onchange="plecProbanta()">
+                                        </div>
+                                        <div class="opisP">♀</div>
+                                        <div class="obiektP">
+                                            <input type="radio" class="PROBANTsex" name="plec_osoby" value="1" checked onchange="plecProbanta()">
+                                        </div>
+                                    </div>
+                                    <div class="grupaLICZBA">
+                                        <div class="nazwa">w</div>
+
+                                        <div class="grupy_wartosci">
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszG" onclick="increment1w1()">+1</button>
+                                                <button class="klawisz klawiszG" onclick="resetw1()">—</button>
+                                                <button class="klawisz klawiszG" onclick="decrement1w1()">-1</button>
+                                            </div>
+                                            <div class="grupa kolor">
+                                                <div class="wartosc">123</div>
+                                            </div>
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszD" onclick="increment10w1()">+10</button>
+                                                <button class="klawisz klawiszD" onclick="decrement10w1()">-10</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grupaLICZBA">
+                                        <div class="nazwa">b</div>
+                                        <div class="grupy_wartosci">
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszG" onclick="increment1b1()">+1</button>
+                                                <button class="klawisz klawiszG" onclick="resetb1()">—</button>
+                                                <button class="klawisz klawiszG" onclick="decrement1b1()">-1</button>
+                                            </div>
+                                            <div class="grupa kolor">
+                                                <div class="wartosc">123</div>
+                                            </div>
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszD" onclick="increment10b1()">+10</button>
+                                                <button class="klawisz klawiszD" onclick="decrement10b1()">-10</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grupaLICZBA">
+                                        <div class="nazwa">z</div>
+                                        <div class="grupy_wartosci">
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszG" onclick="increment1z1()">+1</button>
+                                                <button class="klawisz klawiszG" onclick="resetz1()">—</button>
+                                                <button class="klawisz klawiszG" onclick="decrement1z1()">-1</button>
+                                            </div>
+                                            <div class="grupa kolor">
+                                                <div class="wartosc">123</div>
+                                            </div>
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszD" onclick="increment10z1()">+10</button>
+                                                <button class="klawisz klawiszD" onclick="decrement10z1()">-10</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="alternatywne" onclick="alternatywneKREWNY()">Walidacja</div>
+                                <div class="alternatywne2"></div>
+                            </fieldset>
+                            <fieldset class="inputy_gr inputy_gr23">
+                                <legend>Stosunek Krewnego
+                                    <br>do Powinowatego</legend>
+                                <div class="grupa">
+                                    <div class="grupaLICZBA">
+                                        <div class="nazwa">w</div>
+                                        <div class="grupy_wartosci">
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszG" onclick="increment1w2()">+1</button>
+                                                <button class="klawisz klawiszG" onclick="resetw2()">—</button>
+                                                <button class="klawisz klawiszG" onclick="decrement1w2()">-1</button>
+                                            </div>
+                                            <div class="grupa kolor">
+                                                <div class="wartosc">123</div>
+                                            </div>
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszD" onclick="increment10w2()">+10</button>
+                                                <button class="klawisz klawiszD" onclick="decrement10w2()">-10</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grupaLICZBA">
+                                        <div class="nazwa">b</div>
+                                        <div class="grupy_wartosci">
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszG" onclick="increment1b2()">+1</button>
+                                                <button class="klawisz klawiszG" onclick="resetb2()">—</button>
+                                                <button class="klawisz klawiszG" onclick="decrement1b2()">-1</button>
+                                            </div>
+                                            <div class="grupa kolor">
+                                                <div class="wartosc">123</div>
+                                            </div>
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszD" onclick="increment10b2()">+10</button>
+                                                <button class="klawisz klawiszD" onclick="decrement10b2()">-10</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grupaLICZBA">
+                                        <div class="nazwa">z</div>
+                                        <div class="grupy_wartosci">
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszG" onclick="increment1z2()">+1</button>
+                                                <button class="klawisz klawiszG" onclick="resetz2()">—</button>
+                                                <button class="klawisz klawiszG" onclick="decrement1z2()">-1</button>
+                                            </div>
+                                            <div class="grupa kolor">
+                                                <div class="wartosc">123</div>
+                                            </div>
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszD" onclick="increment10z2()">+10</button>
+                                                <button class="klawisz klawiszD" onclick="decrement10z2()">-10</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alternatywne" onclick="alternatywnePOWINOWATY()">Walidacja</div>
+                                <div class="alternatywne2"></div>
+                            </fieldset>
+                            <fieldset class="inputy_gr inputy_gr23">
+                                <legend>Stosunek Powinowatego
+                                    <br>do Obcego</legend>
+                                <div class="grupa">
+                                    <div class="grupaLICZBA">
+                                        <div class="nazwa">w</div>
+                                        <div class="grupy_wartosci">
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszG" onclick="increment1w3()">+1</button>
+                                                <button class="klawisz klawiszG" onclick="resetw3()">—</button>
+                                                <button class="klawisz klawiszG" onclick="decrement1w3()">-1</button>
+                                            </div>
+                                            <div class="grupa kolor">
+                                                <div class="wartosc">123</div>
+                                            </div>
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszD" onclick="increment10w3()">+10</button>
+                                                <button class="klawisz klawiszD" onclick="decrement10w3()">-10</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grupaLICZBA">
+                                        <div class="nazwa">b</div>
+                                        <div class="grupy_wartosci">
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszG" onclick="increment1b3()">+1</button>
+                                                <button class="klawisz klawiszG" onclick="resetb3()">—</button>
+                                                <button class="klawisz klawiszG" onclick="decrement1b3()">-1</button>
+                                            </div>
+                                            <div class="grupa kolor">
+                                                <div class="wartosc">123</div>
+                                            </div>
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszD" onclick="increment10b3()">+10</button>
+                                                <button class="klawisz klawiszD" onclick="decrement10b3()">-10</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grupaLICZBA">
+                                        <div class="nazwa">z</div>
+                                        <div class="grupy_wartosci">
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszG" onclick="increment1z3()">+1</button>
+                                                <button class="klawisz klawiszG" onclick="resetz3()">—</button>
+                                                <button class="klawisz klawiszG" onclick="decrement1z3()">-1</button>
+                                            </div>
+                                            <div class="grupa kolor">
+                                                <div class="wartosc">123</div>
+                                            </div>
+                                            <div class="grupa">
+                                                <button class="klawisz klawiszD" onclick="increment10z3()">+10</button>
+                                                <button class="klawisz klawiszD" onclick="decrement10z3()">-10</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alternatywne" onclick="alternatywneOBCY()">Walidacja</div>
+                                <div class="alternatywne2"></div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+            <section>
+                    <fieldset class="sekcja_fieldset">
+                        <legend class="LEGENDA_FILEDEST" id="LEGENDA_FILEDEST_generuj" align="center" onclick="sekcja_fieldset2_F()">generuj</legend>
+                        
+                    </fieldset>
+                </section>
+                <section>
+                        <fieldset class="sekcja_fieldset">
+                            <legend class="LEGENDA_FILEDEST" id="LEGENDA_FILEDEST_grafSTOSUNKU" align="center" onclick="sekcja_fieldset3_F()">Graf Podanego Stosunku Genealogicznego</legend>
+                            <!--<legend id="sekcja_fieldset_legend3" class="sekcja_fieldset_legend">Wykres Stosunków Genealogicznych</legend>-->
+                            <div id="sekcja_fieldset_div3" class="sekcja_fieldset_div">
+                                    <div>
+                                        <br><canvas id="nasz_canvas"></canvas>
+                                        <br>
+                                    </div>
+                                </div>
+                        </fieldset>
+                    </section>
+            
+
+
+                <section>
+                    <h2 class="info">Strona w budowie</h2>
+                </section>
+    </main>
+
+    <br>
+    <div id="res">
+
+    </div>
+    <footer>
+        <div class="stopka">
+            <span>
+                <a class="wstopce" href="https://github.com/Cisowscy/CombinatoricsGenealogy/blob/master/LICENSE">LICENCJA: AGPL-3.0</a>
+                <a class="wstopce" href="https://www.facebook.com/JanRomanCisowski">Jan Roman Cisowski 2017 Polska</a>
+                <a class="wstopce" href="https://github.com/Cisowscy/CombinatoricsGenealogy">KOD (GitHub)</a>
+                <a class="wstopce" href="https://github.com/Cisowscy/CombinatoricsGenealogy/issues">Zglos Blad</a>
+            </span>
+            <br>
+            <span class="wstopce">
+                <b>stosunki-genealogiczne</b>
+                <i>(kombinatoryka-genealogiczno-genetyczna)</i>
+                <u>v: 0.0.1-alpha.2</u>
+            </span>
+        </div>
+    </footer>
+
+    <script src="skrypt.js"></script>
+    <script src="skrypt2.js"></script>
+    <script src="skrypt3.js"></script>
 </body>
+
 </html>

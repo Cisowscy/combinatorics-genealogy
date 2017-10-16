@@ -1,7 +1,7 @@
 {
   "name": "stosunki-genealogiczne",
-  "version": "0.0.1-alpha.1",
-  "description": "kombinatoryka-genealogiczno-genetyczna",
+  "version": "0.0.1-alpha.2",
+  "description": "kombinatoryka-genealogiczno-genetyczna czyli Metoda Numeracji Eytzinger`a — Cisowski`ego (do Identyfikacji Stosunków Genealogiczno-Genetycznych)",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/Cisowscy/StosunkiGenealogiczne/issues"
   },
-  "homepage": "https://cisowscy.github.io/StosunkiGenealogiczne/"
+  "homepage": "https://cisowscy.github.io/StosunkiGenealogiczne/",
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "jshint": "^2.9.5"
+  },
+  "dependencies": {
+    "@angular/cli": "^1.5.0-beta.4",
+    "global": "^4.3.2"
+  }
 }

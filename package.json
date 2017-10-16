@@ -1,0 +1,19 @@
+{
+  "name": "stosunki-genealogiczne",
+  "version": "0.0.1-alpha.1",
+  "description": "kombinatoryka-genealogiczno-genetyczna",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Cisowscy/StosunkiGenealogiczne.git"
+  },
+  "author": "JamRomanCisowski@Cisowscy.com",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Cisowscy/StosunkiGenealogiczne/issues"
+  },
+  "homepage": "https://cisowscy.github.io/StosunkiGenealogiczne/"
+}

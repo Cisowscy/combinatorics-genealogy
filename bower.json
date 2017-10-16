@@ -1,6 +1,6 @@
 {
   "name": "stosunki-genealogiczne",
-  "description": "kombinatoryka-genealogiczno-genetyczna",
+  "description": "kombinatoryka-genealogiczno-genetyczna czyli Metoda Numeracji Eytzinger`a — Cisowski`ego (do Identyfikacji Stosunków Genealogiczno-Genetycznych)",
   "main": "index.html",
   "authors": [
     "JamRomanCisowski@Cisowscy.com"
@@ -14,10 +14,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "angular": "angularjs#^1.6.6",
-    "bootstrap": "^3.3.7",
-    "ng-table": "^4.0.0"
-  }
+  ]
 }

@@ -73,11 +73,10 @@
 > >  # gdy praca nad tym rozwinięciem zostanie ukończona należy użyć komendy
 > >  # git flow feature finish inicjacja-dokumentacji
 > > ```
-> ## Moja organizacja pracy z gitem
-> ![oddzialy][obrazek:2]
->
->
->
+# Moja organizacja pracy z gitem
+ ![oddzialy][obrazek:2]
+
+
 ---
  # **Git bash** - czyli co możemy zrobić z git-em i itflow-avh (posiadane oprogramowanie)
 

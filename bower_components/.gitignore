@@ -1,0 +1,73 @@
+
+# bootstrap
+!bootstrap/dist
+bootstrap/*.*
+bootstrap/*/*.map
+bootstrap/build
+bootstrap/js
+bootstrap/scss
+bootstrap/Gemfile
+bootstrap/LICENSE
+bootstrap/dist/css/bootstrap-grid.css.map
+bootstrap/dist/css/bootstrap-grid.min.css.map
+bootstrap/dist/css/bootstrap-reboot.css.map
+bootstrap/dist/css/bootstrap-reboot.min.css.map
+bootstrap/dist/css/bootstrap.css.map
+bootstrap/dist/css/bootstrap.min.css.map
+
+# jquery
+!jquery/dist
+!jquery/external/sizzle
+jquery/*.*
+jquery/external/sizzle/*.*
+jquery/*/*.map
+jquery/src
+jquery/external/sizzle/dist/sizzle.min.map
+
+# jquery-ui
+!jquery-ui/jquery-ui.min.js
+!jquery-ui/jquery-ui.js
+jquery-ui/themes
+jquery-ui/ui
+jquery-ui/.gitignore
+jquery-ui/*.json
+jquery-ui/README.md
+jquery-ui/.bower.json
+
+# lodash
+!lodash/dist
+lodash/*.*
+lodash/.github
+lodash/doc
+lodash/fp
+lodash/lib
+lodash/perf
+lodash/test
+lodash/vendor
+lodash/CHANGELOG
+lodash/LICENSE
+
+# popper.js
+!popper.js/dist
+popper.js/*.*
+popper.js/*/*.map
+popper.js/docs
+popper.js/packages
+popper.js/dist/esm/popper-utils.js.map
+popper.js/dist/esm/popper-utils.min.js.map
+popper.js/dist/esm/popper.js.map
+popper.js/dist/esm/popper.min.js.map
+popper.js/dist/umd/popper-utils.js.map
+popper.js/dist/umd/popper-utils.min.js.map
+popper.js/dist/umd/popper.js.map
+popper.js/dist/umd/popper.min.js.map
+
+# tether
+!tether/dist
+tether/*.*
+tether/*/*.map
+tether/docs
+tether/examples
+tether/src
+tether/LICENSE
+

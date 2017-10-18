@@ -1,0 +1,76 @@
+body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    background: url(../images/BACKGROUND_3mb.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.elel_N{
+    position: absolute; 
+    margin: auto;
+    overflow: hidden;
+    text-align: center;    
+    padding: 0.6rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.575);    
+    -moz-box-shadow: 0 0 1rem black;
+    -webkit-box-shadow: 0 0 1rem black;
+    box-shadow: 0 0 1rem black;      
+}
+.elel_1{    
+    width: 41rem;
+    height: 9rem;
+    z-index: 15; 
+}
+.elel_4{    
+    width: 9rem;
+    height: 9rem;
+    z-index: 14;     
+}
+
+.kl_CLICK:hover {
+    filter: invert(100%);
+}
+.kl_CLICK:active {
+    filter: invert(100%);
+}
+
+.kl_niewiedzialne {
+    visibility: hidden;
+}
+.kl_wiedzialne {
+    visibility: visible;
+}
+/*
+
+
+.kl_head {    
+    width: 41rem;
+    height: 9rem;
+    z-index: 5;  
+    margin: 0rem;
+}
+.kl_stylElemetu{
+    position: absolute;  
+    overflow: hidden;
+    text-align: center;    
+    padding: 0.6rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.575);    
+    -moz-box-shadow: 0 0 1rem black;
+    -webkit-box-shadow: 0 0 1rem black;
+    box-shadow: 0 0 1rem black;    
+}
+.kl_ElementyMenu{
+    margin: 2rem;
+    width: 9rem;
+    height: 9rem;
+}
+
+*/

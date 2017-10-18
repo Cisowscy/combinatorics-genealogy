@@ -139,7 +139,7 @@ function klawisz_4() {
     $("#hist2")
         .append("<h2>Sosa</h2>")
         .append("<h5>(Jerónimo de Sosa)</h5>")
-        .append("<p> — w 1676 w swej genealogicznej pracy <b>„Noticia de la gran Casa de los Marqueses de Villafranca”</b>, przywołał i wykorzystał metodę numerowania przodków Michela Eyzingera, przyczyniając się tym samym do jej popularyzacji.</p>")
+        .append("<p> — w 1676 w swej genealogicznej pracy <b>„Noticia de la gran Casa de los Marqueses de Villafranca”</b>, przywołał i wykorzystał metodę numerowania przodków Michela Aitzinger, przyczyniając się tym samym do jej popularyzacji.</p>")
         .append("<br><hr><br>")
         .append("<p>(hiszpański zakonnik franciszkański i genealog z XVII w., był czytelnikiem teologii w klasztorze św. Marii w Neapolu.)</p>")
         .append("<br><hr><br>");
@@ -154,7 +154,7 @@ function klawisz_4() {
     $("#hist4")
         .append("<h2>Cisowski</h2>")
         .append("<h5>(Jan Roman Jerzy S. Sas Cisowski)</h5>")
-        .append("<p> — w 2017 zaproponował spójne matematyczne rozszerzenie systemu numeracji  Eyzingera, pozwalajace metodą pozycyjno-relacyjną, określić już nie tylko przodków jak u poprzedników, ale dowolną osobę która w jakikolwiek spoób jest połłączona z probantem. </p>")
+        .append("<p> — w 2017 zaproponował spójne matematyczne rozszerzenie systemu numeracji  Aitzinger, pozwalajace metodą pozycyjno-relacyjną, określić już nie tylko przodków jak u poprzedników, ale dowolną osobę która w jakikolwiek spoób jest połłączona z probantem. </p>")
         .append("<p>Metoda ta posiada szereg przekształceń matematycznych pozwalajacych w łatwy sposób określić stopień pokrewieństwa prawnego, genetycznego, a także łatwo określić w którym pokoleniu i po jakiej linii, ktoś jest z nami związany, a także przy pewnych dodatkowych założeniach łatwo określić nazwe stosunku z daną osobą, a także dowiedzieć się czy z daną osobą mamy wspólną cząstke Y-DNA, X-DNA, mtDNA i atDNA.</p>")
         .append("<br><hr><br>")
         .append("<p>(ur. 1990 w Krakowie, syn znanego polskiego konstruktora samolotów Jerzego Cisowskiego z Tarnowa, i matematyczki Jadwigi Ochot z Mysłowic.</p>")

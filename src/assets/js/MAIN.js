@@ -17,7 +17,7 @@ $(function () {
         pozycja_el();   
     });
     $("#div0")
-        .append("<h3>" + tytulStrony1 + "</h3>")
+        .append("<h2>" + tytulStrony1 + "</h2>")
         .append("<hr>")
         .append("<h4>" + tytulStrony2a + "</h4>") 
         .append("<h4>" + tytulStrony2b + "</h4>");

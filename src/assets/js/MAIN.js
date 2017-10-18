@@ -1,5 +1,5 @@
 let tytulStrony1 = "Kombinatoryka Genealogiczna";
-let tytulStrony2 = "Metoda Aitzinger`a — Cisowski`ego";
+let tytulStrony2 = "Metoda Numeracji Aitzinger`a — Cisowski`ego";
 
 //wymiary
 $(function () {
@@ -27,7 +27,7 @@ $(function () {
 function pozycja_el() {
     let rem7 = 7*16;
     let rem9 = 9*16;
-    let rem41 = 36*16;
+    let rem41 = 34*16;
     let Hq = ($("body").innerWidth()/4);
     let Vq = ($("body").innerHeight()/4);
     //if (rem41+rem9>)

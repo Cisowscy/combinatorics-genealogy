@@ -9,7 +9,8 @@ $(function () {
         .append("<button id='div2' class='kl_niewiedzialne elel_N kazdyEL elel_4'></button>")
         .append("<button id='div3' class='kl_niewiedzialne elel_N kazdyEL elel_4'></button>")
         .append("<button id='div4' class='kl_niewiedzialne elel_N kazdyEL elel_4'></button>")
-        .append("<fieldset class='kl_przestrzen kazdyEL kl_niewiedzialne'></fieldset>");
+        .append("<fieldset class='kl_przestrzen kazdyEL kl_niewiedzialne'></fieldset>")
+        .append("<button class='kl_przestrzen_FULL kazdyEL kl_niewiedzialne' onclick='toggleFullScreen()'></button>");
         
         pozycja_el();   
     $( window ).resize(function() {
@@ -26,8 +27,10 @@ $(function () {
     $(".kl_przestrzen")
         .append("<legend class='kl_przestrzen_Tytul kazdyEL'></legend>")
         .append("<button class='kl_przestrzen_czerwonyX kazdyEL kl_niewiedzialne' onclick='klawiszeON_przestrzenOFF()'></button>")
+        //.append("<button class='kl_przestrzen_FULL kazdyEL kl_niewiedzialne' onclick='toggleFullScreen()'></button>")
         .append("<div class='kl_przestrzen_kontener'><p class='kl_pusteLinie'>kontener</p></div>");
-    $(".kl_przestrzen_czerwonyX").append("&#x274c;");
+    $(".kl_przestrzen_czerwonyX").append("&#x274c;"); 
+    $(".kl_przestrzen_FULL").append("&#x21f1;").addClass("kl_CLICK").removeClass("kl_niewiedzialne"); 
     puste_linie(25, ".kl_przestrzen_kontener");
 });
 
@@ -167,7 +170,8 @@ function klawiszeOFF_przestrzenON() {
     $(".kl_pusteLinie").hide();
     $(".elel_N")        
         .fadeOut(1000, function() {
-            $(this).addClass("kl_niewiedzialne");       
+            $(this).addClass("kl_niewiedzialne");
+            //$(".kl_przestrzen_FULL").addClass("kl_CLICK").removeClass("kl_niewiedzialne");                    
             $(".kl_przestrzen_czerwonyX")
                 .addClass("kl_CLICK")
                 .removeClass("kl_niewiedzialne"); 
@@ -189,14 +193,58 @@ function klawiszeON_przestrzenOFF() {
         $(".kl_przestrzen_czerwonyX")
             .removeClass("kl_CLICK")
             .addClass("kl_niewiedzialne"); 
+        //$(".kl_przestrzen_FULL").removeClass("kl_CLICK").addClass("kl_niewiedzialne"); 
         $(".hist1234").remove();
            // $(".kl_przestrzen_czerwonyX").removeAttribute('onclick', 'klawisz_0()');
                                                    
         // ElementyMenu($(this), $(this).parent() );                        
     }); 
-    
+   // toggleFullscreen();
     $(".kl_pusteLinie").hide();
 }
+
+
+// mozfullscreenerror event handler
+function errorHandler() {
+    alert('mozfullscreenerror');
+ }
+ document.documentElement.addEventListener('mozfullscreenerror', errorHandler, false);
+ 
+ // toggle full screen
+ function toggleFullScreen() {
+   if (!document.fullscreenElement &&    // alternative standard method
+       !document.mozFullScreenElement && !document.webkitFullscreenElement) {  // current working methods
+     if (document.documentElement.requestFullscreen) {
+       document.documentElement.requestFullscreen();
+     } else if (document.documentElement.mozRequestFullScreen) {
+       document.documentElement.mozRequestFullScreen();
+     } else if (document.documentElement.webkitRequestFullscreen) {
+       document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+     }
+   } else {
+     if (document.cancelFullScreen) {
+       document.cancelFullScreen();
+     } else if (document.mozCancelFullScreen) {
+       document.mozCancelFullScreen();
+     } else if (document.webkitCancelFullScreen) {
+       document.webkitCancelFullScreen();
+     }
+   }
+ }
+ 
+ // keydown event handler
+ document.addEventListener('keydown', function(e) {
+   if (e.keyCode == 13 || e.keyCode == 70) { // F or Enter key
+     toggleFullScreen();
+   }
+ }, false);
+
+
+
+
+
+
+
 
 
 

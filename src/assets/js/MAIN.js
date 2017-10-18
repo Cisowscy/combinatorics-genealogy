@@ -25,7 +25,7 @@ $(function () {
 });
 
 function pozycja_el() {
-    let rem6 = 6*16;
+    let rem5 = 5*16;
     let rem7 = 7*16;
     let rem9 = 9*16;
     let rem29 = 29*16;
@@ -40,22 +40,22 @@ function pozycja_el() {
     $("#div1")
         .css({
             left: Math.floor(3*Hq-rem9/2), 
-            top: Math.floor(Vq-rem6/2)
+            top: Math.floor(Vq-rem5/2)
         });
     $("#div2")
         .css({
             left: Math.floor(3*Hq-rem9/2), 
-            top: Math.floor(3*Vq-rem6/2)
+            top: Math.floor(3*Vq-rem5/2)
         });
     $("#div3")
         .css({
             left: Math.floor(Hq-rem9/2), 
-            top: Math.floor(3*Vq-rem6/2)
+            top: Math.floor(3*Vq-rem5/2)
         });
     $("#div4")
         .css({
             left: Math.floor(Hq-rem9/2), 
-            top: Math.floor(Vq-rem6/2)
+            top: Math.floor(Vq-rem5/2)
         });
     
 }

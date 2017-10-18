@@ -157,7 +157,7 @@ function klawisz_4() {
     $("#hist4")
         .append("<h2>Cisowski</h2>")
         .append("<h5>(Jan Roman Jerzy S. Sas Cisowski)</h5>")
-        .append("<p> — w 2017 zaproponował spójne matematyczne rozszerzenie systemu numeracji  Aitzinger, pozwalajace metodą pozycyjno-relacyjną, określić już nie tylko przodków jak u poprzedników, ale dowolną osobę która w jakikolwiek spoób jest połłączona z probantem. </p>")
+        .append("<p> — w 2017 zaproponował spójne matematyczne rozszerzenie systemu numeracji  Aitzinger, pozwalajace metodą pozycyjno-relacyjną, określić już nie tylko przodków jak u poprzedników, ale dowolną osobę która w jakikolwiek sposób jest połączona z probantem. </p>")
         .append("<p>Metoda ta posiada szereg przekształceń matematycznych pozwalajacych w łatwy sposób określić stopień pokrewieństwa prawnego, genetycznego, a także łatwo określić w którym pokoleniu i po jakiej linii, ktoś jest z nami związany, a także przy pewnych dodatkowych założeniach łatwo określić nazwe stosunku z daną osobą, a także dowiedzieć się czy z daną osobą mamy wspólną cząstke Y-DNA, X-DNA, mtDNA i atDNA.</p>")
         .append("<br><hr><br>")
         .append("<p>(ur. 1990 w Krakowie, syn znanego polskiego konstruktora samolotów Jerzego Cisowskiego z Tarnowa, i matematyczki Jadwigi Ochot z Mysłowic.</p>")

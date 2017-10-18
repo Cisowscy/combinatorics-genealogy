@@ -1,0 +1,27 @@
+{
+  "name": "combinatorics-genealogy",
+  "version": "0.2.1",
+  "description": "Aitzinger-Cisowski Methode Numeration",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cisowscy/combinatorics-genealogy.git"
+  },
+  "keywords": [
+    "Genealogy"
+  ],
+  "author": "Jan Roman Cisowski",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Cisowscy/combinatorics-genealogy/issues"
+  },
+  "homepage": "https://github.com/Cisowscy/combinatorics-genealogy#readme",
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "standard":"^10.0.3",
+    "jslint":"^0.11.0"
+  }
+}

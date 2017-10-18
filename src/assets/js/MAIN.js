@@ -27,7 +27,7 @@ $(function () {
 function pozycja_el() {
     let rem7 = 7*16;
     let rem9 = 9*16;
-    let rem41 = 30*16;
+    let rem41 = 28*16;
     let Hq = ($("body").innerWidth()/4);
     let Vq = ($("body").innerHeight()/4);
     //if (rem41+rem9>)

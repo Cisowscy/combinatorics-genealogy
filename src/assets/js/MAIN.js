@@ -28,8 +28,8 @@ function pozycja_el() {
     let rem7 = 7*16;
     let rem9 = 9*16;
     let rem41 = 36*16;
-    let Hq = ($(window).width()/4);
-    let Vq = ($(window).height()/4);
+    let Hq = ($("body").innerWidth()/4);
+    let Vq = ($("body").innerHeight()/4);
     //if (rem41+rem9>)
     $("#div0")
         .css({

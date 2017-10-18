@@ -126,7 +126,7 @@ function klawisz_3() {
   
 function klawisz_4() {
     klawiszeOFF_przestrzenON();
-    $(".kl_przestrzen_Tytul").text("Histora");
+    $(".kl_przestrzen_Tytul").text("Historia");
     $(".kl_przestrzen_kontener")
         .append("<div id='hist1' class='hist1234'></div>")
         .append("<div id='hist2' class='hist1234'></div>")

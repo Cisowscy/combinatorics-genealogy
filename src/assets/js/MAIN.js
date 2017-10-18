@@ -28,13 +28,13 @@ function pozycja_el() {
     let rem5 = 5*16;
     let rem7 = 7*16;
     let rem9 = 9*16;
-    let rem29 = 29*16;
+    let rem30 = 30*16;
     let Hq = ($("body").innerWidth()/4);
     let Vq = ($("body").innerHeight()/4);
     //if (rem41+rem9>)
     $("#div0")
         .css({
-            left: Math.floor(2*Hq-rem29/2), 
+            left: Math.floor(2*Hq-rem30/2), 
             top: Math.floor(2*Vq-rem7/2)
         });
     $("#div1")

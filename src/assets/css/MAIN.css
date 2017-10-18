@@ -69,6 +69,18 @@ body {
     position: fixed;
     font-size: 2.4rem; 
 }
+.kl_przestrzen_FULL{
+    z-index: 20; 
+    width: 4rem;
+    height: 4rem;
+    bottom: 1rem;
+    left: 1rem;
+    border: 0;
+    position: fixed;
+    font-size: 2.4rem; 
+    font-weight: 800;
+    color: rgb(26, 36, 180);
+}
 .kl_przestrzen_Tytul {
     filter: invert(100%);
     position: fixed;

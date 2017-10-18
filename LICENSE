@@ -1,3 +1,298 @@
+**GNU AFFERO POWSZECHNA LICENCJA PUBLICZNA**
+
+Wersja 3, 19 listopada 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc. http://fsf.org/
+
+Każdemu wolno kopiować i rozpowszechniać identyczne kopie tej licencji, niedozwolone jest wprowadzanie jakichkolwiek zmian.
+
+# Preambuła
+
+GNU Affero General Public License (GPL Affero Powszechna Licencja Publiczna) jest wolną, kompletową licencją na oprogramowanie i utwory innego rodzaju stworzoną w szczególności w celu zapewnienia współpracy wewnątrz społeczności internetowej w przypadku oprogramowania działającego na serwerach sieciowych.
+
+W przeciwieństwie do naszych Powszechnych Licencji Publicznych, których celem jest zagwarantowanie wszystkim użytkownikom dostępu do wolnego oprogramowania, które pomimo jego rozpowszechniania i możliwości wprowadzania w nim zmian, zawsze pozostaje wolne, licencje na większość programów komputerowych i utworów innego rodzaju są zaprojektowane w taki sposób, by odebrać Wam wolność zmieniania ich i dzielenia się tak programami, jak i efektami zmian.
+
+Kiedy mówimy o wolnym oprogramowaniu, mamy na myśli swobodę korzystania z programu, nie jego całkowitą darmowości. Nasze Powszechne Licencje Publiczne są zaprojektowane w taki sposób, by zagwarantować wam swobodę rozpowszechniania kopii wolnego oprogramowania, z zastrzeżeniem możliwości pobierania opłat za wykonanie i dostarczenie kopii, otrzymanie kodu źródłowego programu lub możliwość otrzymania go na stosowne żądanie, możliwość wprowadzania zmian w oprogramowaniu lub wykorzystania fragmentów programu do tworzenia nowych, wolnych programów. Nasze licencje mają również na celu propagowanie wiedzy o możliwości korzystania z wyżej wymienionych uprawnień.
+
+Programiści stosujący nasze Powszechne Licencje Publiczne chronią twoje prawa w dwóch etapach: (1) zastrzegają prawa autorskie do oprogramowania, oraz (2) oferują tobie niniejszą Licencję, udzielając ci prawnie wiążącego zezwolenia na kopiowanie, rozpowszechnianie i/albo zmienianie tego oprogramowania.
+
+Kolejną korzyścią płynącą z obrony swobody użytkowników jest fakt, iż poprawki poczynione w kolejnych wersjach programu, jeżeli będą szeroko wykorzystywane, staną się dostępne dla innych programistów w celu ich inkorporacji. Dla wielu programistów zachętą do dalszych prac jest właśnie taka współpraca. Jednakże w przypadku oprogramowania działającego na serwerach sieciowych dalszy swobodny rozwój oprogramowania może zostać zastopowany, ponieważ przepisy GNU Powszechnej Licencji Publicznej pozwalają na modyfikowanie i publiczne udostępnianie programów na serwerach sieciowych bez udostępnienia kodu źródłowego.
+
+Licencja GNU AGPL została stworzona by zapewnić w takich przypadkach publiczną dostępność kodu źródłowego. Operator serwera sieciowego, na którym działa zmodyfikowany program, ma obowiązek udostępnienia użytkownikom serwera kodu źródłowego tego programu. Zatem, publiczne użycie zmodyfikowanej wersji programu, na publicznie dostępnym serwerze, łączy się z publicznym udostępnieniem kodu źródłowego zmodyfikowanej wersji programu.
+
+Dawniejsza licencja – Affero GPL opublikowana przez Affero, była stworzona dla osiągnięcia podobnych celów. Jednakże nasza licencja nie jest wersją licencji Affero GPL a Affero opublikowało nową wersję swojej licencji zezwalającą na licencjonowanie kopii i modyfikacji programów z licencją Affero GPL na licencji GNU AGPL.
+
+Poniżej zostały przedstawiony zasady oraz warunki kopiowania, rozpowszechniania i modyfikacji.
+
+ZASADY I WARUNKI
+
+# 0. Definicje
+
+„Licencja&quot; oznacza wersję 3 GNU Affero Powszechnej Licencji Publicznej;
+
+„Prawa autorskie&quot; to także prawa pokrewne w tym prawa ochronne na topografię układów scalonych.
+
+„Program&quot; to każdy utwór objęty prawem autorskim i licencjonowany na zasadach niniejszej Licencji. „Licencjobiorcą&quot; i „uprawnionym&quot; może być osoba fizyczna lub organizacja.
+
+„Modyfikacja&quot; utworu oznacza wymagające zezwolenia twórcy dokonywanie zmian w całości lub w części utworu lub kopiowanie całości lub jego części, takie jednak, które nie stanowi wykonania dokładnej kopii utworu. Utwór będący rezultatem wyżej wymienionych czynności nazywany jest „zmodyfikowana wersją&quot; wcześniejszego utworu lub „utworem „opartym na&quot; utworze wcześniejszym.
+
+„Utwór objęty licencją&quot; oznacza bądź to niezmodyfikowany Program, bądź utwór oparty na Programie.
+
+„Rozpowszechnianie&quot; utworu oznacza czynienie czegokolwiek, co zgodnie z właściwym prawem, bez zezwolenia stanowiłoby pośrednie lub bezpośrednie naruszenie praw autorskich, za wyjątkiem uruchomienia utworu na komputerze lub modyfikacji kopii prywatnej. Rozpowszechnianie obejmuje kopiowanie, dystrybucję (zmodyfikowanego lub nie zmodyfikowanego programu), publiczne udostępnianie, a w niektórych krajach także inne czynności.
+
+„Przekazywanie&quot; utworu oznacza każdą formę rozpowszechniania, która umożliwia innym osobom wykonanie lub otrzymanie kopii utworu. Zwykła interakcja z użytkownikiem za pośrednictwem sieci komputerowej nie stanowi przekazywania.
+
+Interaktywny interfejs użytkownika wyświetla „Zastrzeżenie prawne&quot; obejmujące swoim zakresem przystępną i zawsze widoczną funkcję (1) wyświetlającą zastrzeżenie praw autorskich, (2) informującą użytkownika o braku gwarancji na utwór (z zastrzeżeniem przypadków, gdy gwarancja jest udzielana), jak wyświetlić treść Licencji oraz że licencjobiorca może przekazywać utwór wraz z tą Licencją. Jeżeli panel zawiera listę komend lub opcji wyboru użytkownika takich jak menu, odpowiednio widoczna opcja na liście wypełnia powyższy warunek.
+
+# 1 Kod źródłowy
+
+„Kod źródłowy&quot; oznacza formę utworu preferowaną do wprowadzania w nim zmian. „Kod obiektowy&quot; oznacza każdą inną formę utworu.
+
+„Standardowy interfejs&quot; oznacza bądź oficjalny standard zdefiniowany przez organ do tego powołany albo, w przypadków interfejsów określonych dla konkretnych języków oprogramowania, interfejs, który jest powszechnie używany przez programistów pracujących w danym języku.
+
+„Biblioteki systemowe&quot; wykonywalnego utworu obejmują wszystko co nie stanowi utworu jako całości a (a) jest włączone do standardowej formy pakietu Głównego Komponentu nie będąc częścią Głównego Komponentu, i (b) służy wyłącznie umożliwieniu pracy z Głównym Komponentem lub do implementacji Standardowego Interfejsu dla którego implementacja jest powszechnie dostępna w formie kodu źródłowego. „Główny Komponent&quot; w tym kontekście oznacza główny, podstawowy element (jądro, system okienkowy itp.) konkretnego systemu operacyjnego (jeżeli jest), pod którym wykonywany jest utwór lub kompilator wykorzystany do stworzenia utworu lub interpreter kodu obiektowego wykorzystany do uruchomienia go.
+
+„Odpowiednie źródło&quot; dla utworu w formie kodu obiektowego oznacza całość kodu źródłowego konieczną do wygenerowania, instalacji, (dla utworu w formie wykonywalnej) uruchomienia kodu obiektowego oraz modyfikacji utworu, włączając w to skrypty konieczne do zarządzania tymi czynnościami. Jednakże Odpowiedniego źródła nie stanowią Biblioteki systemowe utworu, narzędzia ogólnego przeznaczenia, ani też powszechnie dostępne wolne, niezmodyfikowane oprogramowanie wykorzystane do wykonywania tych czynności ale niestanowiące części utworu. Na przykład „Odpowiednie źródło&quot; obejmuje pliki definicji interfejsu związane z plikami źródłowymi utworu oraz kod źródłowy dla współdzielonych bibliotek i dynamicznie połączonych podprogramów, które zgodnie z projektem utworu są niezbędne do jego funkcjonowania, na przykład dzięki prywatnemu transferowi danych lub przepływowi kontrolnemu pomiędzy tymi podprogramami a innymi elementami utworu.
+
+Odpowiednie źródło nie musi obejmować niczego, co użytkownicy mogą ponownie wygenerować automatycznie z innych części „odpowiedniego źródła&quot;.
+
+Odpowiednie źródło utworu w formie kodu źródłowego jest również utworem.
+
+# 2. Podstawowe zezwolenia
+
+Wszystkie prawa przyznane na mocy niniejszej licencji są przyznane na czas ochrony majątkowych praw autorskich do Programu i są nieodwoływalne, przy zastrzeżeniu poniżej wymienionych warunków. Licencja jednoznacznie zapewnia Tobie prawo do nieograniczonego uruchamiania niezmodyfikowanego utworu. Dane wyjściowe wygenerowane w skutek uruchomienia utworu objętego Licencją są objęte Licencją wyłącznie jeżeli stanowią one, ze względu na treść, utwór objęty Licencją.
+
+Możesz tak długo bezwarunkowo wykonywać, uruchamiać i propagować utwory objęte Licencją, których nie przekazujesz, dopóki licencja, którą posiadasz pozostaje w mocy.
+
+Możesz przekazywać utwory objęte licencją osobom trzecim wyłącznie w celu dokonywania przez te osoby zmian przeznaczonych do wykorzystania tylko przez Ciebie, a także w celu zapewnienia Tobie urządzeń służących do wykonywania utworów, z zastrzeżeniem, że spełniasz warunki Licencji dotyczące przekazywania materiałów, co do których nie posiadasz praw autorskich. Osoby, które wykonują lub uruchamiają utwory objęte licencją muszą wykonywać to wyłącznie w Twoim imieniu, pod twoim kierownictwem i kontrolą na warunkach zabraniających im tworzenia kopii twojego programu z zastrzeżonym prawem autorskim z wyłączeniem waszych wzajemnych relacji.
+
+Przekazywanie w jakichkolwiek innych okolicznościach jest dozwolone włącznie na warunkach ustanowionych poniżej. Udzielanie sublicencji jest niedozwolone. Nie jest ono konieczne ze względu na zapisy punktu 10 Licencji.
+
+# 3. Ochrona użytkowników przed zabezpieczeniami technicznymi utworów (DRM)** śaden utwór objęty licencją nie może zostać uznany za część „efektywnych zabezpieczeń technicznych&quot; w rozumieniu prawa właściwego stanowiącego wypełnienie zobowiązań wynikających z art. 11 traktatu WIPO z dnia 20 grudnia 1996 r. a także w rozumieniu innych norm prawnych zabraniających lub ograniczających możliwości obchodzenia takich zabezpieczeń.
+
+Przekazując utwór objęty licencją, zrzekasz się wszystkich prawnych środków służących zapobieganiu obchodzeniu zabezpieczeń technicznych w takim zakresie, w jakim takie obchodzenie wynika z korzystania z płynących z Licencji praw do utworu objętego licencją. Zrzekasz się również podejmowania jakichkolwiek działań w celu ograniczenia wykorzystania lub modyfikowania utworu, jako środków służących wyegzekwowaniu, przeciwko użytkownikom utworu, Twoich praw lub praw osób trzecich do nakładania zakazu obchodzenia zabezpieczeń technicznych.
+
+# 4. Przekazywanie kopii identycznych
+
+Możesz przekazywać identyczne kopie kodu źródłowego Programu w takiej postaci, w jakiej go otrzymałeś, za pośrednictwem dowolnego medium, pod warunkiem umieszczenia na każdej kopii w odpowiedni, widoczny sposób zastrzeżenia praw autorskich. Wszelkie informacje o tym, że do kodu musi być stosowana Licencja oraz wszelkie postanowienia nie będące zezwoleniami dodane na podstawie artykułu 7 Licencji odnoszące się do kodu muszą pozostać niezmienione. Niezmienione pozostać musi również zastrzeżenie o braku jakiejkolwiek gwarancji. Każdy, komu przekazujesz kopię programu musi otrzymać również kopię Licencji.
+
+Możesz zażądać jakiejkolwiek zapłaty za każdą kopię, którą przekazujesz. Możesz nie żądać zapłaty. Możesz również oferować odpłatną pomoc techniczną lub gwarancję.
+
+# 5. Przekazywanie zmodyfikowanych wersji źródłowych
+
+Możesz przekazywać w formie kodu źródłowego utwór oparty na Programie lub modyfikacje pozwalające na stworzenie tego utworu z Programu na zasadach określonych w art. 4 Licencji, pod warunkiem zachowania następujących warunków:
+
+- a) Utwór musi zawierać widoczną, opatrzoną odpowiednią datą informację o tym, że dokonałeś modyfikacji
+- b) Utwór musi zawierać widoczną informację o tym, że został rozpowszechniony na zasadach Licencji oraz ewentualnie warunki dodane zgodnie z art. 7 Licencji. To postanowienie modyfikuje postanowienia art. 4 dotyczące „pozostawienia nienaruszonymi postanowień&quot;
+- c) Musisz licencjonować utwór jako całość na zasadach Licencji w stosunku do każdego, kto wejdzie w posiadanie kopii utworu. Licencja odnosi się, odpowiednio postanowienia, które mogą zostać dodane zgodnie z art. 7 Licencji, do całości utworu i wszystkich jego części, bez względu na to jak zostały wyodrębnione. Licencja nie pozwala na licencjonowanie utworu w żaden inny sposób, jednak nie powoduje nieważności  takiego zezwolenia, jeżeli otrzymałeś je odrębnie.
+- d) Jeżeli utwór posiada interaktywny interfejs użytkownika, musi on wyświetlać odpowiednie Zastrzeżenie Prawne. Jeżeli jednak Program posiada interaktywny interfejs użytkownika, który nie wyświetla odpowiedniego Zastrzeżenia Prawnego, twój utwór nie musi wymuszać wyświetlenia Zastrzeżenia Prawnego.
+
+Kompilacja utworu objętego licencją z innymi, odrębnymi i niezależnymi utworami, które nie stanowią, ze swej istoty, rozszerzenia utworu objętego licencją i nie są połączone z utworem objętym licencją w taki sposób, że tworzą większy program, na tym samym nośniku na którym utwór jest przechowywany lub rozpowszechniany, zwana jest „agregatem&quot;, jeżeli kompilacja i wynikające z niej prawa autorskie nie są wykorzystywane w celu ograniczenia dostępu lub praw użytkowników kompilacji ponad ograniczenia wynikające z regulacji dotyczących poszczególnych utworów. Włączenie utworu objętego Licencją do agregatu nie powoduje objęcia Licencją jakichkolwiek innych części agregatu.
+
+** **
+
+# 6. Przekazywanie nie-źródłowych wersji
+
+** **
+
+Możesz przekazać utwór objęty licencją w formie kodu obiektowego na zasadach opisanych w artykule 4 i 5 pod warunkiem, że przekazujesz jednocześnie odczytywalne maszynowo Odpowiednie źródło na jeden z następujących sposobów:
+
+- a) Przekaż kod obiektowy zawarty w materialnym produkcie (także na nośnikach, na których kod jest dystrybuowany), dołączając Odpowiednie źródło  zamieszczone na trwałym, materialnym nośniku zwyczajowo wykorzystywanym dla przenoszenia oprogramowania.
+- b) Przekaż kod obiektowy zawarty w materialnym produkcie (także na  nośnikach, na których kod jest dystrybuowany), dołączając pisemną ofertę, wiążącą przez przynajmniej trzy lata i tak długo, jak długo oferujesz części zamienne do produktu lub wsparcie techniczne dla danego modelu produktu, skierowaną do każdego kto wszedł w posiadanie kodu obiektowego albo (1) przekazania kopii Odpowiedniego źródła całego objętego Licencją oprogramowania zawartego w produkcie, na trwałym, materialnym nośniku zwyczajowo wykorzystywanym dla przenoszenia oprogramowania, za zapłatą ceny nieprzekraczającej kosztów fizycznego przygotowania i przekazania nośnika, albo (2) umożliwienia bezpłatnego dostępu do kopii Odpowiedniego źródła znajdującej się na serwerze sieciowym.
+- c) Przekaż indywidualną kopię kodu obiektowego wraz z kopią pisemnej oferty dostarczenia Odpowiedniego źródła. Ten sposób dozwolony jest w wyjątkowych przypadkach w celach niekomercyjnych i tylko wtedy, gdy otrzymałeś kod obiektowy wraz z ofertą w rozumieniu pkt 6, b).
+- d) Przekaż kod obiektowy przez zapewnienie dostępu do niego ze wskazanego miejsca (za opłatą lub bez) i złóż ofertę adekwatnego dostępu do Odpowiedniego Źródła w ten sam sposób i przez to samo miejsce bez dalszych opłat. Nie musisz wymagać od odbiorców, by kopiowali Odpowiednie źródło wraz z kodem obiektowym. Jeżeli wskazanym miejscem, z którego można skopiować kod obiektowy jest serwer sieciowy, Odpowiednie źródło może znajdować się na innym serwerze (zarządzanym przez ciebie lub osobę trzecią), który zapewnia ekwiwalentne warunki kopiowania, pod warunkiem zamieszczenia obok kodu obiektowego jasnych wskazówek, skąd można skopiować Odpowiednie źródło. Niezależnie od tego, na jakim serwerze znajduje się Odpowiednie źródło jesteś zobligowany do zapewnienia jego dostępności tak długo, jak przewidują to warunki Licencji.
+- e) Przekaż kod obiektowy wykorzystując transmisję danych w sieci peer-to-peer, pod warunkiem poinformowania odbiorców o tym, gdzie kod obiektowy i Odpowiednie źródło utworu są oferowane publicznie i bezpłatnie, z zachowaniem  warunków podpunktu 6d.
+
+Dająca się oddzielić część kodu obiektowego, której kod źródłowy jest odłączony od Odpowiedniego źródła jako Biblioteka systemowa, nie musi być przekazana wraz z kodem obiektowym utworu.
+
+„Produkt użytkownika&quot; jest albo (1) „produktem konsumenckim&quot;, co oznacza każdą materialną własność osobistą, która jest zwykle przeznaczona do osobistego, rodzinnego lub domowego użytku, albo (2) wszystko, co zostało zaprojektowane lub sprzedane w celu wykorzystania w miejscu zamieszkania. Przy rozstrzyganiu czy produkt jest produktem konsumenckim, w razie wątpliwości należy rozstrzygać na korzyść objęcia Licencją. Dla danego produktu, otrzymanego przez danego użytkownika, „zwykły użytek&quot; oznacza typowy, powszechny sposób wykorzystywania danej kategorii produktów, bez względu na status danego użytkownika oraz sposób w jaki dany użytkownik korzysta, przewiduje wykorzystanie, czy ma zamiar korzystać  z produktu. Produkt jest produktem konsumenckim bez względu na to, czy posiada istotne komercyjne, przemysłowe czy niekonsumenckie zastosowanie, chyba, że takie zastosowanie jest jedynym zastosowaniem produktu.
+
+„Informacje instalacyjne&quot; dla Produktu użytkownika oznaczają jakiekolwiek metody, procedury, klucze autoryzacyjne, lub inne informacje umożliwiające instalację i uruchomienie zmodyfikowanej wersji utworu objętego licencją w tym Produkcie użytkownika ze zmodyfikowanej wersji jego Odpowiedniego Źródła. Informacje muszą być na tyle wyczerpująca, by zapewnić, że nieprzerwane funkcjonowanie zmodyfikowanego kodu źródłowego nie zostanie w żadnym przypadku wstrzymane lub zakłócone, wyłącznie z tej przyczyny, że modyfikacja została wykonana.
+
+Jeżeli przekazujesz utwór w formie kodu obiektowego na warunkach niniejszego punktu Licencji w Produkcie użytkownika, z Produktem użytkownika lub wyraźnie dla wykorzystania w Produkcie użytkownika, a przekazywanie stanowi część transakcji, w której prawo do posiadania i korzystania z Produktu użytkownika jest przenoszone na użytkownika na czas nieokreślony lub na czas określony (w zależności od cech transakcji), Odpowiednie źródło przekazane na warunkach niniejszego punktu Licencji musi zostać przekazane wraz z Informacjami instalacyjnymi. Warunek ten nie znajduje zastosowania, gdy ani ty ani osoba trzecia nie ma możliwości zainstalowania zmodyfikowanego kodu obiektowego w Produkcie Użytkownika (na przykład utwór zainstalowany w pamięci ROM).
+
+Obowiązek dostarczenia Informacji instalacyjnych nie skutkuje istnieniem obowiązku dalszego zapewnienia usług serwisowych, obejmowania gwarancją, a także dostarczania aktualizacji dla utworu, który został zmodyfikowany lub zainstalowany przez odbiorcę lub dla Produktu użytkownika, w którym utwór został zmodyfikowany lub zainstalowany. Dostęp do sieci może zostać zastrzeżony, gdy sama modyfikacja istotnie i niekorzystnie wpływa na funkcjonowanie sieci lub narusza reguły i protokoły komunikacji wewnątrz sieci.
+
+Odpowiednie źródło przekazane na podstawie niemniejszego punktu Licencji a także Informacje Instalacyjne dostarczone na podstawie tegoż punktu muszą mieć publicznie dokumentowany format  (z publicznie dostępną implementacją w formie kodu źródłowego), i nie mogą wymagać żadnych specjalnych haseł lub kluczy zabezpieczających przed ich rozpakowaniem, przeczytaniem lub kopiowaniem.
+
+# 7. Warunki dodatkowe
+
+** **
+
+„Dodatkowe zezwolenia&quot;są postanowieniami uzupełniającymi warunki Licencji, wprowadzającymi wyjątki od jednego lub wielu warunków Licencji. Dodatkowe zezwolenia mające zastosowanie do całego Programu są traktowane, jakby były włączone do Licencji, w takim zakresie, w jakim pozostają skuteczne w związku z przepisami właściwego prawa. Jeżeli dodatkowe zezwalania odnoszą się do części Programu, to ta część Programu do której się odnoszą, może być używana osobno na warunkach tych zezwoleń, przy czym cały Program podlega warunkom Licencji bez uwzględnienia dodatkowych zezwoleń.
+
+Jeżeli przekazujesz kopię utworu objętego Licencją, możesz według swobodnego uznania usunąć dodatkowe warunki dotyczące kopii lub którejkolwiek z jej części. (Dodatkowe zezwolenia same mogą stanowić o konieczności ich usunięcia w razie modyfikacji utworu). Możesz także dodać dodatkowe zezwolenia do materiałów, do których przysługują ci lub możesz przekazać prawa autorskie, a są dołączone przez ciebie do utworu objętego Licencją.
+
+Pomimo jakichkolwiek innych warunków Licencji, dla materiałów dodanych przez ciebie do utworu objętego Licencją możesz (jeżeli masz do tego prawo przyznane przez posiadacza praw autorskich do tych materiałów) dodać do Licencji postanowienia:
+
+- a) wytłaczające gwarancję lub ograniczające odpowiedzialność inaczej niż postanowienia artykułów 15 i 16 Licencji, lub
+- b) wymagające zachowania, w granicach rozsądku, informacji prawnych lub oznaczeń autorstwa w materiale lub w zastrzeżeniach Prawnych wyświetlanych przez utwór zawierający ten materiał, lub
+- c) zakazujące nieprawidłowego określania pochodzenia tych materiałów, lub nakazujące, by zmodyfikowana wersja tych materiałów była oznaczona w rozsądny sposób, jako odmienna niż wersja oryginalna, lub
+- d) ograniczające wykorzystanie nazwisk lub nazw licencjodawców lub twórców materiałów w celach reklamowych, lub
+- e) odmawiające przyznania praw, wynikających z przepisów dotyczących znaków towarowych, dotyczących wykorzystania nazw handlowych, znaków towarowych, znaków usługowych, lub
+- f) przyznające ochronę licencjodawcom i twórcom tych materiałów, w sytuacji, gdy ktokolwiek przekazuje materiały (lub ich zmodyfikowaną wersję) z kontraktowym przyjęciem odpowiedzialności w stosunku do odbiorcy, przed jakąkolwiek odpowiedzialnością kontraktową licencjodawców i twórców
+
+Wszystkie inne, nie będące zezwoleniami dodatkowe warunki są uznawane za „dalsze ograniczenia&quot; w rozumieniu punktu 10 Licencji. Jeżeli Program w postaci w jakiej go otrzymałeś, lub jakakolwiek jego część zawiera informację o poddaniu go warunkom Licencji wraz z zastrzeżeniem, które stanowi dalsze ograniczenie, możesz usunąć to zastrzeżenie. Jeżeli dokument licencyjny zawiera dalsze ograniczenia ale dopuszcza sublicencjonowanie lub przekazywanie na warunkach Licencji, możesz dodać do utworu objętego Licencją materiał objęty warunkami dokumentu licencyjnego, z zastrzeżeniem, że dalsze ograniczenia zostaną usunięte w przypadku sublicencjonowania lub przekazywania.
+
+Jeżeli na podstawie niemniejszego punktu Licencji dodajesz postanowienia dotyczące utworu objętego Licencją, musisz umieścić w odpowiednich plikach źródłowych treść tych dodatkowych postanowień, które odnoszą się do tych plików lub informację wskazującą gdzie znaleźć odpowiednie postanowienia.
+
+Dodatkowe warunki, będące lub nie będące pozwoleniami, mogą przybierać formę oddzielnie napisanej licencji, lub mogą być wskazane jako wyjątki. Powyższe wymagania będą obowiązywały bez względu na wybraną formę.
+
+** **
+
+# 8. Wygaśnięcie licencji
+
+Nie możesz rozpowszechniać ani modyfikować utworu objętego Licencją w inny sposób, niż jest to dozwolone na warunkach Licencji. Każda próba innego rozpowszechniania lub modyfikowania stanowi naruszenie warunków Licencji i skutkuje natychmiastowym wygaśnięciem Twoich praw wynikających z Licencji (włącznie ze wszystkimi licencjami patentowymi przyznanymi na podstawie trzeciego paragrafu punktu 11 Licencji).
+
+Jednakże, jeżeli zaniechasz jakichkolwiek naruszeń, Twoja licencja przyznana przez danego posiadacza praw autorskich zostanie przywrócona (a) tymczasowo, dopóki posiadacz praw autorskich jednoznacznie i ostatecznie nie cofnie Twojej licencji i (b) trwale, jeżeli w okresie 60 dni od dnia zaniechania przez Ciebie naruszeń posiadacz praw autorskich nie zawiadomi cię przy użyciu rozsądnych środków o dokonywanych przez Ciebie naruszeniach.
+
+Ponadto, Twoja licencja otrzymana od danego posiadacza praw autorskich zostanie trwale przywrócona, jeżeli ten posiadacz praw autorskich zawiadomi Cię przy użyciu rozsądnych środków o naruszeniu, będzie to pierwsze zawiadomienie o naruszeniu warunków Licencji jakie otrzymałeś od tego posiadacza praw autorskich i przywrócisz stan sprzed naruszenia w terminie 30 dni od otrzymania zawiadomienia.
+
+Wygaśnięcie twoich praw na podstawie zapisów niniejszego punktu Licencji nie skutkuje wygaśnięciem licencji osób które otrzymały od Ciebie kopie lub prawa na warunkach tej Licencji. Jeżeli twoje prawa wygasły i nie zostały trwale przywrócone, nie możesz otrzymać nowej licencji dotyczącej tego samego materiału na zasadach określonych w punkcie 10 Licencji.
+
+** **
+
+# 9. Brak wymogu akceptacji w przypadku otrzymania kopii
+
+Nie musisz akceptować Licencji w przypadku uruchomienia lub otrzymania kopii Programu. Uboczne rozpowszechnianie utworu objętego licencją, będące jedynie konsekwencją sprowadzania kopii za wykorzystaniem transmisji danych w sieci peer-to-peer także nie rodzi obowiązku akceptowania licencji. Jednak wyłącznie Licencja daje ci prawo do rozpowszechniania lub modyfikowania utworu objętego licencją. Rozpowszechnianie i modyfikowanie stanowi naruszenie praw autorskich, jeżeli nie zaakceptowałeś Licencji. Zatem, przez rozpowszechnianie i modyfikowanie utworu objętego Licencją przyznajesz, że zaakceptowałeś Licencję na wykonywanie tych czynności.
+
+# 10. Automatyczne udzielanie licencji kolejnym odbiorcom
+
+** **
+
+Za każdym razem kiedy przekazujesz utwór objęty Licencją, odbiorca automatycznie otrzymuje licencję od pierwotnego licencjodawcy na uruchamianie, modyfikowanie i
+
+rozpowszechnianie tego utworu będącego przedmiotem Licencji. Nie jesteś zobowiązany do zapewnienia stosowania się do zapisów Licencji przez osoby trzecie.
+
+„Transakcja w jednostce gospodarczej&quot; oznacza transakcję przeniesienia kontroli nad organizacją lub faktycznego przeniesienia kapitału organizacji lub podziału organizacji lub łączenia organizacji. Jeżeli rozpowszechnianie utworu objętego Licencja jest skutkiem transakcji w jednostce gospodarczej, każdy podmiot uczestniczący w transakcji, który otrzymuje kopię utworu otrzymuje jednocześnie licencję na ten utwór w postaci w jakiej poprzednik licencje posiadał lub mógł udzielić na zasadach opisanych w paragrafie poprzednim. Otrzymuje także od poprzednika prawo posiadania Odpowiedniego źródła utworu, jeżeli poprzednik je posiadał lub mógł wejść w jego posiadanie dokładając rozsądnych starań.
+
+Nie możesz nakładać na odbiorcę żadnych dalszych ograniczeń związanych z wykonywaniem praw przyznanych lub potwierdzonych przez Licencję. Na przykład nie możesz zobowiązywać do uiszczenia opłaty licencyjnej, zapłaty tantiem czy innej opłaty za wykonywanie praw przyznanych na podstawie Licencji. Nie możesz również wszczynać sporów sądowych (w tym również zgłaszać roszczeń wzajemnych i wytaczać powództw wzajemnych) powołując się na naruszenie jakiegokolwiek zastrzeżenia patentowego poprzez wykonywanie, używanie, sprzedaż, oferowanie do sprzedaży lub sprowadzanie Programu lub jakiejkolwiek jego części.
+
+** **
+
+# 11 Patenty
+
+„Kontrybutorem&quot; jest posiadacz praw autorskich udzielający Licencją prawa do używania programu lub utworu na którym oparty jest program. Utwór na który udzielona jest w ten sposób Licencja nazywany jest „wersją kontrybutora&quot;.
+
+„Podstawowe prawa patentowe&quot; kontrybutora to wszystkie zastrzeżenia patentowe posiadane lub kontrolowane przez kontrybutora a uzyskane przed datą niniejszego dokumentu lub później, które mogłyby zostać naruszone przez dozwolony Licencją sposób tworzenia, używania lub sprzedaży wersji kontrybutora, jednakże z wyłączeniem praw, które zostałyby naruszone wyłącznie w skutek dalszej modyfikacji wersji kontrybutora. Dla celów niniejszej definicji „kontrola&quot; oznacza również prawo do udzielania sublicencji na patent w sposób pozostający w zgodzie z wymaganiami Licencji.
+
+
+
+Każdy kontrybutor przyznaje Tobie niewyłączną, nieograniczoną terytorialnie, nieodpłatną licencję patentową, na podstawie podstawowych praw patentowych, na wykonywanie, używanie, sprzedaż, oferowanie do sprzedaży, sprowadzanie a także uruchamianie, modyfikowanie, rozpowszechnianie treści wersji kontrybutora.
+
+W kolejnych trzech akapitach „licencja patentowa&quot; oznacza każde wyraźne porozumienie na lub zobowiązanie do nie dochodzenia praw z patentu (na przykład wyrażenie zgody na wykorzystywanie patentu lub deklaracja powstrzymania się od jakichkolwiek działań prawnych w przypadku naruszenia praw do patentu). „Udzielenie&quot; licencji patentowej danej osobie oznacza porozumienie lub zobowiązanie, z którego wynika, że udzielający licencji patentowej nie będzie dochodził praw z patentu przeciwko tej osobie.
+
+Jeżeli przekazujesz utwór objęty Licencją, świadomie polegając na licencji patentowej, a Odpowiednie Źródło utworu  nie jest komukolwiek dostępne w celu jego skopiowania, za darmo i zgodnie z postanowieniami Licencji, za pośrednictwem publicznie dostępnego serwera sieciowego lub innego łatwo dostępnego medium, wtedy musisz albo (1) zapewnić dostępność Odpowiedniego źródła we wskazany wyżej sposób, albo (2) doprowadzić do wyzbycia się praw do czerpania korzyści z licencji patentowej na ten konkretny utwór lub też (3) zapewnić zgodny z wymaganiami Licencji sposób rozszerzenia licencji patentowej na dalszych odbiorców. „Świadome poleganie&quot; oznacza, że posiadasz konkretna wiedzę, że gdyby nie istniała licencja patentowa, to przekazywanie przez ciebie utworu w danym kraju, lub używanie przez twojego odbiorcę utworu objętego Licencją w danym kraju, naruszałoby jeden lub więcej możliwych do zidentyfikowania patentów w tym kraju, co do których masz powody przypuszczać, że obowiązują.
+
+Jeżeli, zgodnie z lub w związku z pojedynczą transakcją lub umową, przenosisz lub rozpowszechniasz powodując przekazanie utwór objęty licencją i udzielasz licencji patentowej niektórym osobom otrzymującym utwór objęty licencją, upoważniając je do używania, rozpowszechniania lub przekazywania określonej kopii utworu objętego licencją, wtedy zakres podmiotowy licencji patentowej, której udzielasz zostaje automatycznie rozszerzony na wszystkich odbiorców utworu objętego licencją oraz utworów opartych na tym utworze.
+
+Licencja patentowa jest „dyskryminująca&quot;, jeżeli nie zawiera w swoim zakresie, ogranicza wykonywanie lub prowadzi do niewykonywania jednego lub więcej praw zagwarantowanych przez Licencję. Nie możesz przekazywać utworu objętego Licencja, jeżeli jesteś stroną umowy z osobą trzecią prowadzącą działalność w zakresie dystrybucji oprogramowania, w związku z która to umową dokonujesz płatności na rzecz osoby trzeciej w oparciu o zasięg twoich działań w zakresie przekazywania utworu i osoba trzecia na mocy wyżej wymienionej umowy udziela osobom, które otrzymałyby utwór objęty licencją od ciebie dyskryminującej licencji patentowej (a) powiązanej z kopiami przekazanego przez ciebie utworu objętego Licencją (lub kopiami tych kopii), lub (b) przede wszystkim na powiązanej z konkretnymi produktami lub kompilacjami, które zawierają utwór objęty Licencja, chyba że zastrzegłeś to w umowie zawartej przed dniem 28 marca 2007 r. lub dana licencja patentowa była udzielona przed dniem tym dniem.
+
+śaden zapis Licencji nie może być interpretowany jako wykluczenie lub ograniczenie jakiejkolwiek dorozumianej licencji lub innych środków ochrony przed naruszeniami, które mogą ci przysługiwać na podstawie właściwego prawa patentowego.
+
+** **
+
+# 12. Zakaz ograniczania praw osób trzecich
+
+** **
+
+Jeżeli na mocy postanowienia sądu lub umowy zostały nałożone na Ciebie obowiązki zachowań, które naruszają postanowienia Licencji, nie zwalnia to Ciebie od obowiązku przestrzegania postanowień Licencji. Jeżeli nie możesz przekazać utworu objętego Licencją w taki sposób, by jednocześnie wypełniać swoje zobowiązania wynikające z postanowień Licencji oraz inne zobowiązań, nie możesz przekazywać go wcale. Na przykład, jeżeli zgadzasz się na warunki zgodnie z którymi jesteś uprawniony do poboru tantiem za dalsze przekazywanie od osób którym przekazałeś program, jedynym sposobem na przestrzeganie zarówno tych warunków, jak i postanowień Licencji będzie zaprzestanie przekazywania Programu.
+
+# 13. Współpraca z siecią odległą; Używanie z GNU Powszechną Licencją Publiczną
+
+** **
+
+Pomimo jakichkolwiek innych postanowień Licencji, jeżeli modyfikujesz Program, twoja zmodyfikowana wersja musi oferować wszystkim użytkownikom współpracującym z nią zdalnie za pośrednictwem sieci komputerowej (jeżeli twoja wersja umożliwia taką współpracę) możliwość otrzymania z serwera sieciowego Odpowiedniego źródła za darmo, za pomocą standardowych lub zwyczajowo przyjętych środków ułatwiających kopiowanie oprogramowania. To Odpowiednie źródło winno zawierać Odpowiednie źródło dla jakiegokolwiek utworu objętego wersją 3 Powszechnej Licencji Publicznej GNU, który jest włączony zgodnie z następnym akapitem.
+
+Pomimo jakichkolwiek innych postanowień Licencji, możesz linkować i łączyć jakikolwiek utwór objęty Licencją z utworem objętym wersją 3 Powszechnej Licencji Publicznej GNU w jeden, łączony utwór. Możesz również przekazywać taki utwór. Warunki Licencji będą nadal stosowane do tej części utworu, która jest utworem objętym Licencją. Część która jest łączona z utworem objętym Licencją pozostanie objęta wersją 3 Powszechnej Licencji Publicznej GNU.
+
+# 14. Poprawione wersje Licencji
+
+** **
+
+Free Software Foundation może opublikować poprawioną i/lub nową wersję GNU Affero Powszechnej Licencji Publicznej. Duch tych wersji będzie podobny duchowi aktualnej wersji. Mogą się one jednak różnić w związku z nowymi problemami i zagadnieniami.
+
+Każda wersja jest oznaczona charakterystycznym numerem. Jeżeli Program określa, że odnosi się do niego dana, określona konkretnym numerem wersja GNU Affero Powszechnej Licencji Publicznej „lub jakakolwiek późniejsza wersja&quot; możesz wybrać pomiędzy zasadami i warunkami danej wersji a zasadami i warunkami jakiejkolwiek późniejszej wersji opublikowanej przez Free Software Foundation. Jeżeli Program nie określa numeru wersji GNU Affero Powszechnej Licencji Publicznej, możesz wybrać z pomiędzy wszystkich wersji opublikowanych przez Free Software Foundation.
+
+Jeżeli Program określa, że przedstawiciel może zdecydować, która przyszła wersja GNU Affero Powszechnej Licencji Publicznej ma być użyta, to takie publiczne oświadczenie przedstawiciela o akceptacji danej wersji, bezterminowo uprawnia cię do wyboru tej wersji w odniesieniu do Programu.
+
+Późniejsze wersje licencji mogą przyznawać tobie dodatkowe lub inne uprawnienia. Jednakże żadne dodatkowe zobowiązania nie zostaną nałożone ani na autora ani na twórcę w wyniku dokonanego przez ciebie wyboru wersji późniejszej.
+
+# 15. Wyłączeni gwarancji
+
+** **
+
+ZA WYJĄTKIEM SYTUACJI PRZEWIDZIANYCH PRZEZ WŁAŚCIWE PRAWO, NIE
+
+UDZIELA SIĘ ŻADNEJ GWARANCJI NA PRGRAM. O ILE NA PIŚMIE NIE POSTANOWIONO ODMIENNIE, POSIADACZE PRAW AUTORSKICH I/LUB INNE
+
+OSOBY DOSTARCZAJĄ PROGRAM W TAKIEJ POSTACI W JAKIEJ JEST, BEZ
+
+JAKIEJKOLWIEK, DOMYŚLNEJ LUB BEZPOŚREDNIO WYRAŻONEJ GWARANCJI,
+
+W TYM BEZ DOMYŚLNYCH GWARANCJI PRZYDATNOŚCI HANDLOWEJ ORAZ PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. TY UŻYTKOWNIKU PONOSISZ CAŁE RYZYKO ZWIĄZANE Z JAKOŚCIĄ I DZIAŁANIEM PROGRAMU. W PRZYPADKU WADLIWOŚCI PROGRAMU PONIESISZ WSZELKIE KOSZTY KONIECZNEGO SERWISU, NAPRAWY LUB POPRAWEK.
+
+** **
+
+# 16. Ograniczenie odpowiedzialności
+
+** **
+
+ZA WYJĄTKIEM SYTUACJI PRZEWIDZIANYCH WŁAŚCIWYM PRAWEM LUB JEŻELI
+
+INACZEJ NIE UZGODNIONO NA PIŚMIE, ANI POSIADACZ PRAW AUTORSKICH, ANI
+
+INNA OSOBA, KTÓRA MODYFIKUJE I/LUB PRZEKAZUJE PROGRAM ZGODNIE Z POWYŻSZYMI ZEZWOLENIAMI, NIE BĘDZIE ODPOWIEDZIALNA WOBEC CIEBIE ZA
+
+SZKODY, WŁĄCZNIE ZE SZKODAMI OGÓLNYMI, SZCZEGÓLNYMI, UBOCZNYMI
+
+LUB WTÓRNYMI POWSTAŁYMI W SKUTEK UŻYTKOWANIA LUB NIEMOŻNOŚCI
+
+UŻYTKOWANIA PROGRAMU (MIĘDZY INNYMI ZA UTRATĘ DANYCH, NIEDOKŁADNE ODTWORZENIE DANYCH, STRATY PONIESIONE PRZEZ CIEBIE LUB OSOBY TRZECIE, BRAK WSPÓŁDZIAŁANIA PROGRAMU Z INNYMI PROGRAMAMI), NAWET JEŻELI POSIADACZ PRAW AUTORSKICH LUB OSOBA TRZECIA ZOSTAŁA UPRZEDZONA O MOŻLIWOŚCI WYSTĄPIENIA TAKICH SZKÓD.
+
+** **
+
+# 17. Interpretacja punktów 15 i 16
+
+** **
+
+Jeżeli w zgodzie z właściwym prawem nie można wyłączyć gwarancji ani ograniczyć odpowiedzialności, jak w, odpowiednio, punkcie 15 i 16 Licencji, to właściwy sąd winien stosować przepisy prawa krajowego w możliwie jak najszerszym zakresie wyłączające odpowiedzialność cywilną w związku z Programem, chyba że w zamian za wynagrodzenie udzielono gwarancji lub zaakceptowano odpowiedzialność.
+
+KONIEC ZASAD I WARUNKÓW
+
+# Jak stosować powyższe warunki do twoich nowych programów
+
+Jeżeli stworzysz nowy program i chcesz by umożliwić powszechne użytkowanie tego programu w najszerszy możliwy sposób, najlepszą drogą do osiągnięcia takiego celu będzie uczynienie go wolnym oprogramowaniem, które każdy może rozpowszechniać i zmieniać w zgodzie z warunkami tej Licencji.
+
+By to zrobić, dołącz następującą informację do programu. Najbezpieczniej jest dołączyć taką informację na początku każdego pliku źródłowego. W ten sposób najefektywniej wskażesz na brak gwarancji. Każdy plik powinien zawierać co najmniej informację o istnieniu majątkowych praw autorskich do programu (Copyright (C)) a także odesłanie do miejsca, gdzie można znaleźć pełną informację.
+
+&lt;jedna linia z informacją o nazwie programu oraz opisem jego działania&gt;
+
+         Copyright (C) &lt;rok&gt; &lt;imię twórcy&gt;
+
+Ten program stanowi wolne oprogramowanie: możesz je rozpowszechniać i/lub modyfikować na warunkach GNU Affero Powszechnej Licencji Publicznej wydanej przez Free Software Foundation, albo wersji 3 Licencji, albo (według uznania) wersji późniejszej.
+
+Ten program jest rozpowszechniany z nadzieją, że jest przydatny, ale
+
+BEZ JAKIEJKOLWIEK GWARANCJI, nawet bez domyślnej gwarancji PRZYDATNOŚCI HANDLOWEJ ORAZ PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. Przeczytaj GNU Affero Powszechną Licencję Publiczną w celu zapoznania się ze szczegółami.
+
+Powinieneś otrzymać kopię GNU Affero Powszechnej Licencji Publicznej wraz z programem. Jeżeli nie otrzymałeś jej, zobacz na
+
+&lt;http://www.gnu.org/licenses/&gt;.
+
+Dołącz także swoje dane adresowe dla poczty papierowej i elektronicznej.
+
+Jeżeli Twoje oprogramowanie może wchodzić w interakcję z użytkownikami zdalnie, za pośrednictwem sieci komputerowej, powinieneś się upewnić, że użytkownicy mają możliwość otrzymania kodu źródłowego. Jeżeli Twój program jest aplikacją sieciową, jego interfejs powinien wyświetlać link „Źródło&quot; prowadzący do archiwum kodu. Istnieje wiele sposobów, na które możesz udostępniać kod źródłowy. Różne rozwiązania będą stosowne dla różnych programów; w celu zapoznania się ze szczególnymi wymaganiami zobacz punkt 13 Licencji.
+
+Jeżeli jest to konieczne, powinieneś uzyskać pisemne oświadczenie twojego pracodawcy (jeżeli pracujesz jako programista) lub szkoły o zrzeczeniu się praw autorskich do programu. Celem uzyskania dalszych informacji w tym jak stosować i jak postępować zgodnie z GNU AGPL zobacz &lt;http://www.gnu.org/licenses/&gt;.
+
+
+
+
+
+                                  ---
+                                  ---
+
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 

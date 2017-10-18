@@ -1,18 +1,21 @@
 {
-  "name": "stosunki-genealogiczne",
-  "description": "kombinatoryka-genealogiczno-genetyczna czyli Metoda Numeracji Eytzinger`a — Cisowski`ego (do Identyfikacji Stosunków Genealogiczno-Genetycznych)",
+  "name": "combinatorics-genealogy",
+  "description": "Aitzinger-Cisowski Methode Numeration",
   "main": "index.html",
   "authors": [
-    "JamRomanCisowski@Cisowscy.com"
+    "Jan Roman Cisowski"
   ],
   "license": "AGPL-3.0",
-  "homepage": "https://cisowscy.github.io/StosunkiGenealogiczne/",
+  "keywords": [
+    "Genealogy"
+  ],
+  "homepage": "https://cisowscy.github.io/combinatorics-genealogy/",
   "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
+    "lodash": "^4.17.4",
+    "tether": "^1.4.0",
+    "bootstrap": "v4.0.0-beta"
+  }
 }

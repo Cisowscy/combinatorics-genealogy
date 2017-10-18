@@ -1,9 +1,0 @@
-button{
-    padding:  10px;
-    margin: 10px;
-    width: 100px;
-    height: 50px;
-}
-button:hover{
-    background-color: rebeccapurple;
-}

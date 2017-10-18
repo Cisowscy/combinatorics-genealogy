@@ -1,6 +1,6 @@
-let tytulStrony1 = "Kombinatoryka Genealogiczno Genetyczna";
+let tytulStrony1 = "Kombinatoryka Genealogiczna";
 let tytulStrony2a = "Metoda Numeracji";
-let tytulStrony2v = "Aitzinger`a — Cisowski`ego";
+let tytulStrony2b = "Aitzinger`a — Cisowski`ego";
 let tytulStrony3 = "(do Identyfikacji Stosunków Genealogiczno-Genetycznych)";
 
 //wymiary
@@ -20,8 +20,7 @@ $(function () {
         .append("<h3>" + tytulStrony1 + "</h3>")
         .append("<hr>")
         .append("<h4>" + tytulStrony2a + "</h4>") 
-        .append("<h4>" + tytulStrony2b + "</h4>") 
-        .append("<h6>" + tytulStrony3 + "</h6>");
+        .append("<h4>" + tytulStrony2b + "</h4>");
     $("#div1").append("<h4>Metoda</h4>");
     $("#div2").append("<h4>Przyszła<br>Aplikacja</h4>");
     $("#div3").append("<h4>Nazwy<br>Stosunków</h4>");    

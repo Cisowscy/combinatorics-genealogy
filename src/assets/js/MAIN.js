@@ -1,5 +1,6 @@
 let tytulStrony1 = "Kombinatoryka Genealogiczno Genetyczna";
-let tytulStrony2 = "Metoda Numeracji Eytzinger`a — Cisowski`ego";
+let tytulStrony2a = "Metoda Numeracji";
+let tytulStrony2v = "Aitzinger`a — Cisowski`ego";
 let tytulStrony3 = "(do Identyfikacji Stosunków Genealogiczno-Genetycznych)";
 
 //wymiary
@@ -16,9 +17,10 @@ $(function () {
         pozycja_el();   
     });
     $("#div0")
-        .append("<h2>" + tytulStrony1 + "</h2>")
+        .append("<h3>" + tytulStrony1 + "</h3>")
         .append("<hr>")
-        .append("<h4>" + tytulStrony2 + "</h4>") 
+        .append("<h4>" + tytulStrony2a + "</h4>") 
+        .append("<h4>" + tytulStrony2b + "</h4>") 
         .append("<h6>" + tytulStrony3 + "</h6>");
     $("#div1").append("<h4>Metoda</h4>");
     $("#div2").append("<h4>Przyszła<br>Aplikacja</h4>");

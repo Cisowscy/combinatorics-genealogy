@@ -1,7 +1,5 @@
 let tytulStrony1 = "Kombinatoryka Genealogiczna";
-let tytulStrony2a = "Metoda Numeracji";
-let tytulStrony2b = "Aitzinger`a — Cisowski`ego";
-let tytulStrony3 = "(do Identyfikacji Stosunków Genealogiczno-Genetycznych)";
+let tytulStrony2 = "Metoda Aitzinger`a — Cisowski`ego";
 
 //wymiary
 $(function () {
@@ -19,8 +17,7 @@ $(function () {
     $("#div0")
         .append("<h2>" + tytulStrony1 + "</h2>")
         .append("<hr>")
-        .append("<h4>" + tytulStrony2a + "</h4>") 
-        .append("<h4>" + tytulStrony2b + "</h4>");
+        .append("<h4>" + tytulStrony2 + "</h4>");
     $("#div1").append("<h4>Metoda</h4>");
     $("#div2").append("<h4>Przyszła<br>Aplikacja</h4>");
     $("#div3").append("<h4>Nazwy<br>Stosunków</h4>");    
@@ -28,6 +25,7 @@ $(function () {
 });
 
 function pozycja_el() {
+    let rem7 = 7*16;
     let rem9 = 9*16;
     let rem41 = 36*16;
     let Hq = ($(window).width()/4);
@@ -36,7 +34,7 @@ function pozycja_el() {
     $("#div0")
         .css({
             left: Math.floor(2*Hq-rem41/2), 
-            top: Math.floor(2*Vq-rem9/2)
+            top: Math.floor(2*Vq-rem7/2)
         });
     $("#div1")
         .css({
